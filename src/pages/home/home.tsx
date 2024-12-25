@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import Typed from "typed.js";
 import "./home.css";
+import personalInfo from "../../utils/personal-info";
 
 export default function Home() {
   useEffect(() => {
@@ -31,23 +32,23 @@ export default function Home() {
           data-aos="fade-in"
         />
         <div className="container" data-aos="zoom-out" data-aos-delay="100">
-          <h2>Vitória de Camargo</h2>
+          <h2>{personalInfo.firstName} {personalInfo.lastName}</h2>
           <p>
             Eu sou{' '}
             <span className="typed"></span>
             <span className="typed-cursor typed-cursor--blink"></span>
           </p>
           <div className="social-links">
-            <a href="https://github.com/vpaesi" target="_blank">
+            <a href={personalInfo.socialMedia.github} target="_blank">
               <i className="bi bi-github"></i>
             </a>
-            <a href="https://www.linkedin.com/in/vpaesi/" target="_blank">
+            <a href={personalInfo.socialMedia.linkedin} target="_blank">
               <i className="bi bi-linkedin"></i>
             </a>
-            <a href="https://www.instagram.com/viehdevitoria/" target="_blank">
+            <a href={personalInfo.socialMedia.instagram} target="_blank">
               <i className="bi bi-instagram"></i>
             </a>
-            <a href="mailto:paesivitoria@gmail.com" target="_blank">
+            <a href={personalInfo.socialMedia.email} target="_blank">
               <i className="bi bi-envelope"></i>
             </a>
           </div>

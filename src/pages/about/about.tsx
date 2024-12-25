@@ -1,4 +1,5 @@
 import "./about.css";
+import personalInfo from "../../utils/personal-info";
 
 export default function About() {
   const progressBars = document.querySelectorAll(".progress-bar");
@@ -31,7 +32,7 @@ export default function About() {
           <div className="container">
             <ol>
               <li>
-                <a href="index.html">Home</a>
+                <a href="/home">Home</a>
               </li>
               <li className="current">Sobre</li>
             </ol>
@@ -70,7 +71,7 @@ export default function About() {
                       <strong>GitHub:</strong>{" "}
                       <span>
                         <a
-                          href="https://github.com/vpaesi"
+                          href={personalInfo.socialMedia.github}
                           className="__cf_email__"
                           data-cfemail="85e0e8e4ece9c5e0fde4e8f5e9e0abe6eae8"
                         >
@@ -103,7 +104,7 @@ export default function About() {
                       <strong>Email:</strong>{" "}
                       <span>
                         <a
-                          href="mailto:paesivitoria@gmail.com"
+                          href={personalInfo.socialMedia.email}
                           className="__cf_email__"
                           data-cfemail="85e0e8e4ece9c5e0fde4e8f5e9e0abe6eae8"
                         >
@@ -275,7 +276,7 @@ export default function About() {
               <div className="features-item">
                 <i className="bi bi-camera" style={{ color: "#5578ff" }}></i>
                 <h3>
-                  <a href="https://www.instagram.com/viehdevitoria/" className="stretched-link">
+                  <a href={personalInfo.socialMedia.instagram} className="stretched-link">
                     Fotografia
                   </a>
                 </h3>
