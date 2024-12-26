@@ -7,6 +7,7 @@ import Footer from './components/footer/footer.tsx';
 import Home from './pages/home/home.tsx';
 import About from './pages/about/about.tsx';
 import Resume from './pages/resume/resume.tsx';
+import Portfolio from './pages/portfolio/portfolio.tsx';
 import UserProvider from './components/userContextProps.tsx';
 
 createRoot(document.getElementById('root')!).render(
@@ -18,6 +19,7 @@ createRoot(document.getElementById('root')!).render(
           <Route path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/resume" element={<Resume />} />
+          <Route path='/portfolio' element={<Portfolio />} />
         </Routes>
         <Footer />
       </BrowserRouter>
