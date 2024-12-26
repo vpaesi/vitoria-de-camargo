@@ -1,0 +1,10 @@
+.family-about{
+    width: 100%;
+}
+
+.aside-family-about{
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    width: 100%;
+    align-items: center;
+}

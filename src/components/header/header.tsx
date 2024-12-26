@@ -55,57 +55,57 @@ export default function Header(): JSX.Element {
               </a>
             </li>
             <li className="dropdown">
-              <a href="#about-plus" className={activeLink.includes("about-plus") ? "active" : ""}>
+              <a href="/about-plus" className={activeLink.includes("about-plus") ? "active" : ""}>
                 <span>Um pouco mais de mim</span>
                 <i className="bi bi-chevron-down toggle-dropdown"></i>
               </a>
               <ul>
                 <li className="dropdown">
-                  <a href="#family" className={activeLink.includes("family") ? "active" : ""}>
+                  <a href="/family" className={activeLink.includes("family") ? "active" : ""}>
                     <span>Família</span>
                     <i className="bi bi-chevron-down toggle-dropdown"></i>
                   </a>
                   <ul>
                     <li>
-                      <a href="#family-giving" className={activeLink === "#family-giving" ? "active" : ""}>
+                      <a href="/family#gave" className={activeLink === "/family#gave" ? "active" : ""}>
                         Família que Deus me deu
                       </a>
                     </li>
                     <li>
-                      <a href="#family-made" className={activeLink === "#family-made" ? "active" : ""}>
+                      <a href="/family#made" className={activeLink === "/family#made" ? "active" : ""}>
                         Família que criei
                       </a>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <a href="#lgbt" className={activeLink === "#lgbt" ? "active" : ""}>
+                  <a href="/lgbt" className={activeLink === "/lgbt" ? "active" : ""}>
                     Minha vida como LGBTQIAPN+
                   </a>
                 </li>
                 <li>
-                  <a href="#hobbies" className={activeLink === "#hobbies" ? "active" : ""}>
+                  <a href="/hobbies" className={activeLink === "/hobbies" ? "active" : ""}>
                     Hobbies
                   </a>
                 </li>
                 <li className="dropdown">
-                  <a href="#trajectories" className={activeLink.includes("trajectories") ? "active" : ""}>
+                  <a href="/trajectories" className={activeLink.includes("trajectories") ? "active" : ""}>
                     <span>Trajetórias</span>
                     <i className="bi bi-chevron-down toggle-dropdown"></i>
                   </a>
                   <ul>
                     <li>
-                      <a href="#professional-trajectory" className={activeLink === "#professional-trajectory" ? "active" : ""}>
+                      <a href="/trajectories#professional" className={activeLink === "/trajectories#professional" ? "active" : ""}>
                         Trajetória Profissional
                       </a>
                     </li>
                     <li>
-                      <a href="#academix-trajectory" className={activeLink === "#academix-trajectory" ? "active" : ""}>
+                      <a href="/trajectories#academic" className={activeLink === "/trajectories#academic" ? "active" : ""}>
                         Trajetória acadêmica
                       </a>
                     </li>
                     <li>
-                      <a href="#personal-trajectory" className={activeLink === "#personal-trajectory" ? "active" : ""}>
+                      <a href="/trajectories#academic" className={activeLink === "/trajectories#academic" ? "active" : ""}>
                         Trajetória pessoal
                       </a>
                     </li>

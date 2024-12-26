@@ -9,6 +9,8 @@ import About from './pages/about/about.tsx';
 import Resume from './pages/resume/resume.tsx';
 import Portfolio from './pages/portfolio/portfolio.tsx';
 import UserProvider from './components/userContextProps.tsx';
+import Family from './pages/family/family.tsx';
+import AboutPlus from './pages/about-plus/about-plus.tsx';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -20,6 +22,8 @@ createRoot(document.getElementById('root')!).render(
           <Route path="/about" element={<About />} />
           <Route path="/resume" element={<Resume />} />
           <Route path='/portfolio' element={<Portfolio />} />
+          <Route path='/about-plus' element={<AboutPlus />} />
+          <Route path='/family' element={<Family />} />
         </Routes>
         <Footer />
       </BrowserRouter>
