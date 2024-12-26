@@ -1,5 +1,6 @@
 import Dropdown from "../../utils/dropdown-props";
 import personalInfo from "../../utils/personal-info";
+import "./resume.css";
 
 export default function Resume() {
   return (
@@ -81,7 +82,7 @@ export default function Resume() {
                 <h4>Análise e Desenvolvimento de Sistemas</h4>
                 <h5>2024 - 2027</h5>
                 <p>
-                  <em>Universidade Descomplica</em>
+                  <em>Centro Universitário União das Américas Descomplica</em>
                 </p>
                 <Dropdown
                   title="saiba mais sobre essa formação "
@@ -105,7 +106,7 @@ export default function Resume() {
                 <h4>Pós Graduação em Gestão da Qualidade</h4>
                 <h5>2023</h5>
                 <p>
-                  <em>Universidade Cesumar</em>
+                  <em>Centro Universitário Cesumar</em>
                 </p>
                 <Dropdown
                   title="saiba mais sobre essa formação "
@@ -127,7 +128,7 @@ export default function Resume() {
                 <h4>Bacharelado em Biblioteconomia</h4>
                 <h5>2017 - 2020</h5>
                 <p>
-                  <em>Universidade Claretiano</em>
+                  <em>Centro Universitário Claretiano</em>
                 </p>
                 <Dropdown
                   title="saiba mais sobre essa formação "
@@ -158,23 +159,71 @@ export default function Resume() {
                   ]}
                 />
               </div>
+              <br />
+              <h3 className="resume-title">Cursos livre e curiosidades</h3>
+              <div className="resume-item">
+                <p>
+                  Gosto de estudar nas horas vagas e alguns dos meus
+                  certificados são:
+                  <ul>
+                    <li>React</li>
+                    <li>HTML e CSS</li>
+                    <li>Lógica de Programação</li>
+                    <li>Javascript</li>
+                    <li>Implementação da ISO 9001</li>
+                    <li>Formação para auditores internos</li>
+                    <li>Scrum</li>
+                    <li>Formação em Liderança</li>
+                    <li>Design Thinking</li>
+                    <li>Excel intermediário</li>
+                    <li>LGPD</li>
+                    <li>Produtividade e Gestão do tempo</li>
+                  </ul>
+                </p>
+                <p>
+                  Em 2023 fui mentora do curso 'Procedimentos de pré-prelo' na
+                  Fundatec, habilitando novos profissionais para apoio à área de
+                  Bancas no setor de Concursos da Fundação
+                </p>
+                <p>
+                  Possuo inglês intermediário/avançado, tendo habilidade na
+                  leitura e escrita e conversação básica
+                </p>
+                <p />
+              </div>
+
+              <br />
+
+              <img
+                src="/src/assets/img/character-resume.svg"
+                alt="Ilustração de mulher clicando em 'START' em um notebook. Da tela do notebook sai um foguete indicando que a mulher está iniciando algo que a levará para cima"
+                height="500"
+                style={{ marginTop: "3rem" }}
+              />
             </div>
 
             <div className="col-lg-6" data-aos="fade-up" data-aos-delay="200">
               <h3 className="resume-title">Experiências profissionais</h3>
               <div className="resume-item">
                 <h4>Desenvolvedora de software</h4>
-                <p>
-                  <em>Estagiária</em>
-                </p>
-                <h5>10/2024 - atualmente</h5>
+                <div>
+                  <em>Estagiária</em> <h5>10/2024 - atualmente</h5>
+                </div>
                 <p>
                   <em>DB Server</em>
                 </p>
-                <ul>
-                  <li>responsabilidade</li>
-                </ul>
+                <Dropdown
+                  title="saiba mais sobre essa experiência "
+                  content={[
+                    "Selecionada para o Programa START DB, estou em constante aprendizado e desenvolvimento de minhas habilidades técnicas",
+                    "Tenho o privilégio de receber treinamento técnico dos melhores professores de tecnologia da PUCRS",
+                    "Desenvolvimento de aplicações web com Java e Springboot",
+                    "Desenvolvimento de aplicações web com React Vite",
+                  ]}
+                />
               </div>
+
+              <br />
 
               <div className="resume-item">
                 <h4>Criadora de conteúdo visual</h4>
@@ -182,13 +231,16 @@ export default function Resume() {
                   <em>Freelancer</em>
                 </p>
                 <h5>10/2023 - atualmente</h5>
-                <p>
-                  <em>Remoto</em>
-                </p>
-                <ul>
-                  <li>responsabilidade</li>
-                </ul>
+                <Dropdown
+                  title="saiba mais sobre essa experiência "
+                  content={[
+                    "Criação de conteúdo visual para comunicação com clientes e divulgação em redes sociais.",
+                    "Fotografia comercial de produtos e eventual gerenciamento de Instagram profissional.",
+                  ]}
+                />
               </div>
+
+              <br />
 
               <div className="resume-item">
                 <h4>Assistente de Qualidade</h4>
@@ -196,27 +248,38 @@ export default function Resume() {
                 <p>
                   <em>Coman Polímeros</em>
                 </p>
-                <ul>
-                  <li>
-                    Controle de não conformidades, desvios da qualidade,
-                    oportunidades de melhoria e documentação controlada.
-                  </li>
-                  <li>
-                    {" "}
-                    Elaboração de planilhas, procedimentos padrões, instruções
-                    de trabalhos, registros gerais, informativos e formulários
-                    de preenchimento.
-                  </li>
-                  <li>
-                    Realização de treinamentos com as equipes de Produção.
-                  </li>
-                  <li>
-                    {" "}
-                    Conscientização da importância do Sistema de Gestão
-                    Integrado (SGI) e demais atividades da área.
-                  </li>
-                </ul>
+                <Dropdown
+                  title="saiba mais sobre essa experiência "
+                  content={[
+                    "Controle de não conformidades, desvios da qualidade, oportunidades de melhoria e documentação controlada.",
+                    "Elaboração de planilhas, procedimentos padrões, instruções de trabalhos, registros gerais, informativos e formulários de preenchimento.",
+                    "Realização de treinamentos com as equipes de Produção.",
+                    "Conscientização da importância do Sistema de Gestão Integrado (SGI) e demais atividades da área.",
+                  ]}
+                />
               </div>
+
+              <br />
+
+              <div className="resume-item">
+                <h4>Coordenadora de Concursos e Processos Seletivos</h4>
+                <h5>10/2020 - 10/2023</h5>
+                <p>
+                  <em>
+                    Fundação Universidade Empresa de Tecnologia e Ciências
+                  </em>
+                </p>
+                <Dropdown
+                  title="saiba mais sobre essa experiência "
+                  content={[
+                    "Lideração e treinamento de equipe",
+                    "Execução de tarefas de alta complexidade e sigilo",
+                    "Execução de tarefas pertinentes a função, como viagens (intermunicipais e interestaduais) a trabalho, organização do local de aplicação e da equipe de prova.",
+                  ]}
+                />
+              </div>
+
+              <br />
 
               <div className="resume-item">
                 <h4>Líder de Processos</h4>
@@ -226,18 +289,20 @@ export default function Resume() {
                     Fundação Universidade Empresa de Tecnologia e Ciências
                   </em>
                 </p>
-                <ul>
-                  <li>Responsável pela equipe de diagramação documental.</li>
-                  <li>
-                    Análise e tratamento de documentos sigilosos para aplicação
-                    de concursos e processos seletivos
-                  </li>
-                  <li>Manipulação e elaboração de planilhas</li>
-                  <li>Controle de KPI e conhecimento em OKR</li>
-                  <li>Controle de informação documentada conforme ISO 9001</li>
-                  <li>Realização de procedimentos pré-prelo.</li>
-                </ul>
+                <Dropdown
+                  title="saiba mais sobre essa experiência "
+                  content={[
+                    "Responsável pela equipe de diagramação documental.",
+                    "Análise e tratamento de documentos sigilosos para aplicação de concursos e processos seletivos",
+                    "Manipulação e elaboração de planilhas",
+                    "Controle de KPI e conhecimento em OKR",
+                    "Controle de informação documentada conforme ISO 9001",
+                    "Realização de procedimentos pré-prelo.",
+                  ]}
+                />
               </div>
+
+              <br />
 
               <div className="resume-item">
                 <h4>Líder de Projetos</h4>
@@ -247,36 +312,25 @@ export default function Resume() {
                     Fundação Universidade Empresa de Tecnologia e Ciências
                   </em>
                 </p>
-                <ul>
-                  <li>Responsável por projetos de processos seletivos</li>
-                  <li>
-                    Envolvimento com alta complexidade de processos sigilosos
-                  </li>
-                  <li>Captação de briefing junto ao cliente</li>
-                  <li>Criação de cronograma</li>
-                  <li>Elaboração de editais e toda a logística de execução</li>
-                  <li>
-                    Análise de legislação vigente, contratos, propostas,
-                    documentações pessoais, entre outros.
-                  </li>
-                  <li> Manipulação de planilhas</li>
-                  <li>Registro de KPI </li>
-                  <li>
-                    Acompanhamento de projetos garantindo o cumprimento dos
-                    prazos e requisitos.
-                  </li>
-                  <li>
-                    Captura de oportunidades de melhoria a todo momento visando
-                    entregar um projeto alinhado com os objetivos do cliente e a
-                    equipe.
-                  </li>
-                  <li>
-                    {" "}
-                    Treinamento e gerenciamento de equipes de apoio para
-                    aplicação de concursos.
-                  </li>
-                </ul>
+                <Dropdown
+                  title="saiba mais sobre essa experiência "
+                  content={[
+                    "Responsável por projetos de processos seletivos",
+                    "Envolvimento com alta complexidade de processos sigilosos",
+                    "Captação de briefing junto ao cliente",
+                    "Criação de cronograma",
+                    "Elaboração de editais e toda a logística de execução",
+                    "Análise de legislação vigente, contratos, propostas, documentações pessoais, entre outros.",
+                    "Manipulação de planilhas",
+                    "Registro de KPI",
+                    "Acompanhamento de projetos garantindo o cumprimento dos prazos e requisitos.",
+                    "Captura de oportunidades de melhoria a todo momento visando entregar um projeto alinhado com os objetivos do cliente e a equipe.",
+                    "Treinamento e gerenciamento de equipes de apoio para aplicação de concursos.",
+                  ]}
+                />
               </div>
+
+              <br />
 
               <div className="resume-item">
                 <h4>Assistente de Loja</h4>
@@ -284,15 +338,17 @@ export default function Resume() {
                 <p>
                   <em>Livraria Leitura</em>
                 </p>
-                <ul>
-                  <li>
-                    Responsável pela organização da inauguração da loja.
-                    Organização e inclusão em sistema de obras dos setores de
-                    administração, economia, política, sociologia, filosofia,
-                    espiritualidade e religião. Vendas e atendimento ao público.
-                  </li>
-                </ul>
+                <Dropdown
+                  title="saiba mais sobre essa experiência "
+                  content={[
+                    "Responsável pela organização da inauguração da loja.",
+                    "Organização e inclusão em sistema de obras dos setores de administração, economia, política, sociologia, filosofia, espiritualidade e religião.",
+                    "Vendas e atendimento ao público.",
+                  ]}
+                />
               </div>
+
+              <br />
 
               <div className="resume-item">
                 <h4>Auxiliar de Biblioteca</h4>
@@ -302,88 +358,111 @@ export default function Resume() {
                     Fundação Universidade Empresa de Tecnologia e Ciências
                   </em>
                 </p>
-                <ul>
-                  <li>
-                    Responsável pelo processamento técnico e catalogação de
-                    materiais, atendimento aos usuários (público 18 à +60), SRI,
-                    suporte e orientação para pesquisas e trabalhos nas normas
-                    da ABNT, organização do acervo (técnicos em ADM, TI, TST,
-                    enfermagem e qualidade, e, romance), criação de designs para
-                    divulgação do acervo e serviços, gerenciamento de rede
-                    social, cotação de livros e demais materiais para a
-                    biblioteca, Digitalização, impressão e cópia de materiais.
-                    Vivência com CDU e o Software Gnuteca.
-                  </li>
-                </ul>
+                <Dropdown
+                  title="saiba mais sobre essa experiência "
+                  content={[
+                    "Responsável pelo processamento técnico e catalogação de materiais",
+                    "Atendimento aos usuários (público 18 à +60)",
+                    "Serviço de Referência e Informação (SRI)",
+                    "Orientação para pesquisas e trabalhos nas normas da ABNT",
+                    "Organização do acervo (técnicos e romances)",
+                    "Criação de conteúdo visual e textual para divulgação do acervo e serviços em blog (Wordpress)",
+                    "Cotação de livros e demais materiais para a biblioteca",
+                    "Digitalização, impressão e cópia de materiais",
+                    "Vivência com CDU e o Software Gnuteca.",
+                  ]}
+                />
               </div>
 
+              <br />
+
               <div className="resume-item">
-                <h4>Estagiária de Biblioteca</h4>
-                <h5>06/2018 - 04/2019</h5>
+                <h4>Auxiliar de Biblioteca</h4>
+                <div>
+                  <em>Estagiária</em> <h5>06/2018 - 04/2019</h5>
+                </div>
                 <p>
                   <em>
                     Prefeitura Municipal de Porto Alegre: Arquivo Histórico de
                     Porto Alegre Moysés Vellinho
                   </em>
                 </p>
-                <ul>
-                  <li>
-                    Responsável pelo processamento técnico e catalogação de
-                    materiais, atendimento aos usuários (público de
-                    pesquisadores), SRI, suporte e orientação para pesquisas e
-                    organização do acervo (incluindo acervo de obras raras).
-                    Vivência com CDU e o Software Pergamum.
-                  </li>
-                </ul>
+                <Dropdown
+                  title="saiba mais sobre essa experiência "
+                  content={[
+                    "Responsável pelo processamento técnico e catalogação de materiais",
+                    "Atendimento aos usuários (público de pesquisadores)",
+                    "Serviço de Referência e Informação (SRI)",
+                    "Orientação para pesquisas e organização do acervo (incluindo acervo de obras raras)",
+                    "Vivência com CDU e o Software Pergamum.",
+                  ]}
+                />
               </div>
 
+              <br />
+
               <div className="resume-item">
-                <h4>Estagiária de Biblioteca</h4>
-                <h5>02/2018 - 05/2018</h5>
+                <h4>Auxiliar de Biblioteca</h4>
+                <div>
+                  <em>Estagiária</em> <h5>02/2018 - 05/2018</h5>
+                </div>
                 <p>
                   <em>Ftec/IBGEN</em>
                 </p>
-                <ul>
-                  <li>
-                    Leitura de estantes, etiquetação de livros, atendimento aos
-                    usuários (público 18 à +60), SRI, suporte e orientação para
-                    pesquisas e organização de acervo. Vivência com CDU e o
-                    Software TOTVS.
-                  </li>
-                </ul>
+                <Dropdown
+                  title="saiba mais sobre essa experiência "
+                  content={[
+                    "Responsável pelo processamento técnico e catalogação de materiais",
+                    "Atendimento aos usuários (público 18 à +60)",
+                    "Serviço de Referência e Informação (SRI)",
+                    "Orientação para pesquisas e organização do acervo",
+                    "Vivência com CDU e o Software TOTVS.",
+                  ]}
+                />
               </div>
 
+              <br />
+
               <div className="resume-item">
-                <h4>Estagiária de Biblioteca</h4>
-                <h5>08/2017 - 12/2017</h5>
+                <h4>Auxiliar de Biblioteca</h4>
+                <div>
+                  <em>Estagiária</em> <h5>08/2017 - 12/2017</h5>
+                </div>
                 <p>
                   <em>Colégio Monteiro Lobato</em>
                 </p>
-                <ul>
-                  <li>
-                    Leitura de estantes, etiquetação de livros, atendimento aos
-                    usuários (público maternal e fundamental I e II), SRI e
-                    organização de acervo. Vivência com CDU e o Software Sophia.
-                  </li>
-                </ul>
+                <Dropdown
+                  title="saiba mais sobre essa experiência "
+                  content={[
+                    "Responsável pelo processamento técnico e catalogação de materiais",
+                    "Atendimento aos usuários (público maternal e fundamental I e II)",
+                    "Serviço de Referência e Informação (SRI)",
+                    "Orientação para pesquisas e organização do acervo",
+                    "Vivência com CDU e o Software Sophia.",
+                  ]}
+                />
               </div>
 
+              <br />
+
               <div className="resume-item">
-                <h4>Menos aprendiz</h4>
-                <h5>01/2013 - 01/2015</h5>
+                <h4>Auxiliar Administrativa</h4>
+                <div>
+                  <em>Menor Aprendiz</em> <h5>01/2013 - 01/2015</h5>
+                </div>
                 <p>
                   <em>Jamef Transportes</em>
                 </p>
-                <ul>
-                  <li>
-                    Conferência, arquivamento e maloteamento de documentos.
-                    Inclusão de dados em planilhas para KPI, monitoramento da
-                    qualidade de serviços prestados pelo setor. Cadastro de
-                    motoristas/veículos na Apisul e na ANTT. Contato com
-                    agentes/motoristas em caso de documentos pendentes ou
-                    incorretos. Vivência com software Oracle.
-                  </li>
-                </ul>
+                <Dropdown
+                  title="saiba mais sobre essa experiência "
+                  content={[
+                    "Conferência, arquivamento e maloteamento de documentos.",
+                    "Inclusão de dados em planilhas para KPI, monitoramento da qualidade de serviços prestados pelo setor.",
+                    "Cadastro de motoristas/veículos na Apisul e na ANTT.",
+                    "Contato com agentes/motoristas em caso de documentos pendentes ou incorretos.",
+                    "Vivência com software Oracle.",
+                  ]}
+                />
               </div>
             </div>
           </div>
