@@ -1,0 +1,22 @@
+.family-about,
+.hobby-about {
+  width: 100%;
+}
+
+.aside-family-about,
+.container-hobby-about,
+.container-hobby-about-inverted {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  width: 100%;
+  align-items: center;
+}
+
+.container-hobby-about-inverted {
+  grid-template-areas: "aside img";
+  gap: 2rem;
+}
+
+.hobby-about-inverted {
+  grid-area: img;
+}
