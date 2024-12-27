@@ -12,6 +12,7 @@ const personalInfo = {
     instagram: "https://www.instagram.com/viehdevitoria/",
     linkedin: "https://www.linkedin.com/in/vpaesi/",
     email: "mailto:paesivitoria@gmail.com",
+    tvTime: "https://tvtime.com/r/36zZa",
   },
 };
 export default personalInfo;
