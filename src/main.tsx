@@ -12,6 +12,7 @@ import UserProvider from './components/userContextProps.tsx';
 import AboutPlus from './pages/about-plus/about-plus.tsx';
 import Family from './pages/about-plus/family.tsx';
 import Hobbies from './pages/about-plus/hobbies.tsx';
+import Trajectories from './pages/about-plus/trajectories.tsx';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -26,6 +27,7 @@ createRoot(document.getElementById('root')!).render(
           <Route path='/about-plus' element={<AboutPlus />} />
           <Route path='/family' element={<Family />} />
           <Route path='/hobbies' element={<Hobbies />} />
+          <Route path='/trajectories' element={<Trajectories />} />
         </Routes>
         <Footer />
       </BrowserRouter>

@@ -79,11 +79,6 @@ export default function Header(): JSX.Element {
                   </ul>
                 </li>
                 <li>
-                  <a href="/lgbt" className={activeLink === "/lgbt" ? "active" : ""}>
-                    Minha vida como LGBTQIAPN+
-                  </a>
-                </li>
-                <li>
                   <a href="/hobbies" className={activeLink === "/hobbies" ? "active" : ""}>
                     Hobbies
                   </a>

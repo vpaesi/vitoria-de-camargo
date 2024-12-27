@@ -25,7 +25,8 @@ export default function Family() {
                 <a href="/home">Home</a>
               </li>
               <li className="current">
-              <a href="/about-plus">Um pouco mais sobre mim </a> / Família</li>
+                <a href="/about-plus">Um pouco mais sobre mim </a> / Família
+              </li>
             </ol>
           </div>
         </nav>

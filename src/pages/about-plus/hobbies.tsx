@@ -321,7 +321,7 @@ export default function Hobbies() {
               <div className="hobby-about">
                 <img
                   src="/src/assets/img/character-studies.svg"
-                  alt="Ilustração de uma mulher assistindo a uma série"
+                  alt="Ilustração de uma mulher estudando online"
                   width={600}
                 />
               </div>
