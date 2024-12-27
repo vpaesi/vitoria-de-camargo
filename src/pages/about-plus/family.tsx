@@ -1,4 +1,4 @@
-import "./family.css";
+import "./about-plus.css";
 
 export default function Family() {
   return (
@@ -24,7 +24,8 @@ export default function Family() {
               <li>
                 <a href="/home">Home</a>
               </li>
-              <li className="current">Um pouco mais sobre mim / Família</li>
+              <li className="current">
+              <a href="/about-plus">Um pouco mais sobre mim </a> / Família</li>
             </ol>
           </div>
         </nav>
