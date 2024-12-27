@@ -75,8 +75,7 @@ useEffect(() => {
                       <span>
                         <a
                           href={personalInfo.socialMedia.github}
-                          className="__cf_email__"
-                          data-cfemail="85e0e8e4ece9c5e0fde4e8f5e9e0abe6eae8"
+                          target="_blank"
                         >
                           github.com/vpaesi
                         </a>
@@ -108,8 +107,7 @@ useEffect(() => {
                       <span>
                         <a
                           href={personalInfo.socialMedia.email}
-                          className="__cf_email__"
-                          data-cfemail="85e0e8e4ece9c5e0fde4e8f5e9e0abe6eae8"
+                          target="_blank"
                         >
                           paesivitoria@gmail.com
                         </a>

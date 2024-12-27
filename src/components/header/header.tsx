@@ -20,9 +20,9 @@ export default function Header(): JSX.Element {
           <ul>
             <li>
               <a
-                href="/home"
-                className={activeLink === "/home" ? "active" : ""}
-                onClick={() => handleLinkClick("/home")}
+                href="/"
+                className={activeLink === "/" ? "active" : ""}
+                onClick={() => handleLinkClick("/")}
               >
                 Home
               </a>

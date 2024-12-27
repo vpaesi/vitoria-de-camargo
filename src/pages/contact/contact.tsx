@@ -75,7 +75,7 @@ const Contact = () => {
                     <i className="icon bi bi-telephone flex-shrink-0"></i>
                     <div>
                       <h3>Whatsapp</h3>
-                      <a href={personalInfo.socialMedia.whats}>
+                      <a href={personalInfo.socialMedia.whats} target="_blank">
                         {personalInfo.phone}
                       </a>
                     </div>
@@ -90,7 +90,7 @@ const Contact = () => {
                     <div>
                       <h3>Email</h3>
                       <p>
-                        <a href={`mailto:${personalInfo.email}`}>
+                        <a href={`mailto:${personalInfo.email}`} target="_blank">
                           {personalInfo.email}
                         </a>
                       </p>
@@ -106,13 +106,13 @@ const Contact = () => {
                     <div>
                       <h3>Redes sociais</h3>
                       <div className="social-links">
-                        <a href={personalInfo.socialMedia.github}>
+                        <a href={personalInfo.socialMedia.github} target="_blank">
                           <i className="bi bi-github"></i>
                         </a>
-                        <a href={personalInfo.socialMedia.linkedin}>
+                        <a href={personalInfo.socialMedia.linkedin} target="_blank">
                           <i className="bi bi-linkedin"></i>
                         </a>
-                        <a href={personalInfo.socialMedia.instagram}>
+                        <a href={personalInfo.socialMedia.instagram} target="_blank">
                           <i className="bi bi-instagram"></i>
                         </a>
                       </div>

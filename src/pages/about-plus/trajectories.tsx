@@ -187,7 +187,6 @@ export default function Trajectories() {
                     seção da minha{" "}
                     <a
                       href="#professional"
-                      target="_blank"
                       rel="noopener noreferrer"
                     >
                       {" "}
@@ -274,7 +273,7 @@ export default function Trajectories() {
                     Eu poderia tranquilamente escrever um livro de tudo o que já
                     vivi, mas vou tentar resumir um pouco. Bom, sobre a minha
                     família vou me abster pois já falei um pouco na seção de
-                    <a href="/family"> Família</a>.{" "}
+                    <a href="/family" target="_blank"> Família</a>.{" "}
                   </p>
                   <h4>Infância</h4>
                   <p>

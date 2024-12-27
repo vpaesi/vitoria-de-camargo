@@ -68,6 +68,7 @@ export default function Portfolio() {
                     </p>
                     <a
                       href="https://spinning-joias.vercel.app/"
+                      target="_blank"
                       title="Ver site"
                       data-gallery="portfolio-gallery-app"
                       className="glightbox preview-link"
@@ -76,6 +77,7 @@ export default function Portfolio() {
                     </a>
                     <a
                       href="https://github.com/vpaesi/spinning-joias"
+                      target="_blank"
                       title="Ver repositório"
                       className="details-link"
                     >
@@ -97,6 +99,7 @@ export default function Portfolio() {
                     <p>Meu primeiro porfólio, criado em julho de 2024.</p>
                     <a
                       href="https://portfolio-vitoria-de-camargo.vercel.app/"
+                      target="_blank"
                       title="Ver site"
                       data-gallery="portfolio-gallery-app"
                       className="glightbox preview-link"
@@ -105,6 +108,7 @@ export default function Portfolio() {
                     </a>
                     <a
                       href="https://github.com/vpaesi/portfolio-vitoria-de-camargo"
+                      target="_blank"
                       title="Ver repositório"
                       className="details-link"
                     >
@@ -129,6 +133,7 @@ export default function Portfolio() {
                     </p>
                     <a
                       href="https://github.com/vpaesi/ponte-de-geracoes"
+                      target="_blank"
                       title="Ver repositório"
                       data-gallery="portfolio-gallery-app"
                       className="glightbox preview-link"
@@ -174,6 +179,7 @@ export default function Portfolio() {
                     </p>
                     <a
                       href="https://github.com/vpaesi/alura-front-projects"
+                      target="_blank"
                       title="Ver repositório"
                       className="details-link"
                     >
@@ -199,6 +205,7 @@ export default function Portfolio() {
                     </p>
                     <a
                       href="https://github.com/vpaesi/alura-back-projects"
+                      target="_blank"
                       title="Ver repositório"
                       className="details-link"
                     >
@@ -220,6 +227,7 @@ export default function Portfolio() {
                     <p>Aplicação fictícia para compra de pacotes de viagens.</p>
                     <a
                       href="https://vpaesi.github.io/agencia-turismo/"
+                      target="_blank"
                       title="Ver site"
                       data-gallery="portfolio-gallery-app"
                       className="glightbox preview-link"
@@ -228,6 +236,7 @@ export default function Portfolio() {
                     </a>
                     <a
                       href="https://github.com/vpaesi/agencia-turismo"
+                      target="_blank"
                       title="Ver repositório"
                       className="details-link"
                     >

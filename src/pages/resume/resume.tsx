@@ -64,11 +64,7 @@ export default function Resume() {
                   <li>{personalInfo.city}</li>
                   <li>{personalInfo.phone}</li>
                   <li>
-                    <a
-                      href="/cdn-cgi/l/email-protection"
-                      className="__cf_email__"
-                      data-cfemail="d6b7babfb5b3f8b4b7a4bdbab3af96b3aeb7bba6bab3f8b5b9bb"
-                    >
+                    <a href={personalInfo.socialMedia.email} target="_blank">
                       {personalInfo.email}
                     </a>
                   </li>
