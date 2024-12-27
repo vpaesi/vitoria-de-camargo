@@ -1,12 +1,15 @@
+import { useEffect } from "react";
 import "./about.css";
 import personalInfo from "../../utils/personal-info";
 
 export default function About() {
+useEffect(() => {
   const progressBars = document.querySelectorAll(".progress-bar");
   progressBars.forEach((bar) => {
     const progressValue = bar.getAttribute("aria-valuenow");
     (bar as HTMLElement).style.width = `${progressValue}%`;
   });
+}, []);
 
   return (
     <section className="about-page">
