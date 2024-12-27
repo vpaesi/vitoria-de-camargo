@@ -168,7 +168,7 @@ export default function Portfolio() {
                   <img
                     src="/src/assets/img/repo-frontend.png"
                     className="img-fluid"
-                    alt="Screenshot do repositório em questão"
+                    alt="Screenshot do repositório de projetos de Front-end da Alura"
                   />
                   <div className="portfolio-info">
                     <h4>Front-end: Alura</h4>
@@ -194,7 +194,7 @@ export default function Portfolio() {
                   <img
                     src="/src/assets/img/repo-backend.png"
                     className="img-fluid"
-                    alt="Screenshot do repositório em questão"
+                    alt="Screenshot do repositório de projetos de Back-end da Alura"
                   />
                   <div className="portfolio-info">
                     <h4>Back-end: Alura</h4>

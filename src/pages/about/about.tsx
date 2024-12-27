@@ -48,7 +48,7 @@ useEffect(() => {
             <div className="col-lg-4">
               <img
                 src="/src/assets/img/character-about.svg"
-                alt="Ilustração de mulher com um notebook no colo, ao seu redor há um robo, um foguete e outras referências à tecnologia e inovação"
+                alt="Ilustração de mulher empurrando arquivos em um notebook do tamanho dela, ao seu redor há imagens de engrenagens, e folhas escritas CSS e JS."
                 className="img-fluid"
                 style={{ paddingTop: "2rem" }}
               />
