@@ -11,8 +11,7 @@ node_modules
 dist
 dist-ssr
 *.local
-content
-comentarios-pessoais
+bloco-de-notas-pessoal
 
 # Editor directories and files
 .vscode/*
