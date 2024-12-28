@@ -1,6 +1,6 @@
 .about .content h2 {
   font-weight: 700;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 .about .content ul {
@@ -9,24 +9,24 @@
 }
 
 .about .content ul li {
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   display: flex;
   align-items: center;
 }
 
 .about .content ul strong {
-  margin-right: 10px;
+  margin-right: 0.2rem;
 }
 
 .about .content ul i {
-  font-size: 16px;
-  margin-right: 5px;
+  font-size: 1rem;
+  margin-right: 0.31em;
   color: var(--accent-color);
   line-height: 0;
 }
 
 .skills .progress {
-  height: 60px;
+  height: 3.75rem;
   display: block;
   background: none;
   border-radius: 0;
@@ -35,7 +35,7 @@
 .skills .progress .skill {
   color: var(--heading-color);
   padding: 0;
-  margin: 0 0 6px 0;
+  margin: 0 0 0.37rem 0;
   text-transform: uppercase;
   display: block;
   font-weight: 600;
@@ -53,7 +53,7 @@
 }
 
 .skills .progress-bar {
-  width: 1px;
+  width: 0.06rem;
   height: 1.5rem;
   transition: 0.9s;
   background-color: var(--accent-color);
@@ -63,15 +63,15 @@
   background-color: var(--surface-color);
   display: flex;
   align-items: center;
-  padding: 20px;
+  padding: 1.25rem;
   transition: 0.3s;
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
   position: relative;
 }
 
 .interests .features-item i {
-  font-size: 32px;
-  padding-right: 10px;
+  font-size: 2rem;
+  padding-right: 0.2rem;
   line-height: 0;
 }
 
@@ -80,7 +80,7 @@
   margin: 0;
   padding: 0;
   line-height: 1;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .interests .features-item h3 a {

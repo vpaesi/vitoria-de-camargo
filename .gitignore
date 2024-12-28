@@ -24,3 +24,5 @@ bloco-de-notas-pessoal
 *.sln
 *.sw?
 
+
+.vercel

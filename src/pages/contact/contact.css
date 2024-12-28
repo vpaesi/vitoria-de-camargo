@@ -1,17 +1,18 @@
-.info-item h3{
+.info-item h3 {
   display: flex;
   justify-self: start;
-  margin-bottom: 15px;
-  font-size: 18px;
+  margin-bottom: 0.93rem;
+  font-size: 1.12rem;
   font-weight: 700;
-  margin: 0 0 2px 0;
+  margin: 0 0 0.12rem 0;
 }
 
-.social-links{
+.social-links {
   font-size: 1.5rem;
 }
 
-.social-links, .info-item{
+.social-links,
+.info-item {
   display: flex;
   justify-content: start;
   align-items: center;
@@ -24,28 +25,40 @@
 .icon {
   background-color: var(--accent-color);
   border-radius: 100%;
-  border:1px solid  var(--accent-color);
-  padding: 20px 30px;
+  border: 1px solid var(--accent-color);
+  padding: 1.25rem 1.87rem;
   font-size: 1rem;
   margin-right: 1rem;
 }
 
-.icon #address{
+.icon #address {
   align-self: baseline;
 }
 
-.info-item p{
+.info-item p {
   color: var(--default-color);
 }
 
 .email-form {
-  box-shadow: 0px 0px 1.5rem rgba(0, 0, 0, 0.3);
-  padding: 30px;
+  box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.3);
+  padding: 1.87rem;
   margin: 1rem 5rem;
 }
 
+@media (max-width: 1199px) {
+
+  .info-item,
+  .mapswrapper {
+    display: none !important;
+  }
+
+  .email-form {
+    box-shadow: none
+  }
+}
+
 @media (max-width: 575px) {
-.email-form {
+  .email-form {
     padding: 1.2rem;
   }
 }
@@ -59,17 +72,23 @@
   color: var(--contrast-color);
   background: var(--accent-color);
   border: 0;
-  padding: 10px 30px;
+  padding: 0.2rem 1.87rem;
   transition: 0.4s;
-  border-radius: 50px;
+  border-radius: 3.12rem;
 }
 
 .email-form button:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
 
-.error-message, .sent-message, .loading {
-  display: none;
+.error-message,
+.sent-message,
+.loading {
+  /* display: none; */
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s linear;
+
   background: var(--default-color);
   color: var(--surface-color);
   padding: 1rem;
@@ -77,16 +96,29 @@
   font-weight: 600;
 }
 
+.error-message.show,
+.sent-message.show,
+.loading.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.error-message,
+.sent-message {
+  color: var(--default-color);
+  border-radius: 0.5rem;
+}
+
 .error-message {
-  border: #df1529;
-  text-align: left;
+  background: #df1529;
 }
 
 .sent-message {
   background: #059652;
 }
 
-.sent-message, .loading {
+.sent-message,
+.loading {
   text-align: center;
 }
 

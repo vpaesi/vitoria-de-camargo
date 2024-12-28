@@ -13,7 +13,7 @@ const personalInfo = {
     github: "https://github.com/vpaesi",
     instagram: "https://www.instagram.com/viehdevitoria/",
     linkedin: "https://www.linkedin.com/in/vpaesi/",
-    email: "mailto:paesivitoria@gmail.com",
+    email: "mailto:paesivitoria@gmail.com?subject=Olá&body=Como%20posso%20ajudar?",
     tvTime: "https://tvtime.com/r/36zZa",
     whats: "https://wa.me/5551991969824",
   }

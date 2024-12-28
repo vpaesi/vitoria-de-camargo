@@ -1,4 +1,6 @@
 @import url('/content/vendors/bootstrap/css/bootstrap.min.css');
+@import url('/content/vendors/bootstrap-icons/bootstrap-icons.css');
+@import '/content/vendors/aos/aos.css';
 
 :root {
   --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto,
@@ -72,18 +74,18 @@ h6 {
   position: fixed;
   visibility: hidden;
   opacity: 0;
-  right: 15px;
-  bottom: -15px;
+  right: 0.93rem;
+  bottom: -0.93rem;
   z-index: 99999;
   background-color: var(--accent-color);
-  width: 44px;
-  height: 44px;
-  border-radius: 50px;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 3.12rem;
   transition: all 0.4s;
 }
 
 .scroll-top i {
-  font-size: 24px;
+  font-size: 1.5rem;
   color: var(--contrast-color);
   line-height: 0;
 }
@@ -96,7 +98,7 @@ h6 {
 .scroll-top.active {
   visibility: visible;
   opacity: 1;
-  bottom: 15px;
+  bottom: 0.93rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -105,7 +107,7 @@ h6 {
   }
 }
 
-#page-section{
+#page-section {
   padding: 1rem 0;
 }
 
@@ -123,19 +125,17 @@ h6 {
 }
 
 .page-title .heading {
-  padding: 160px 0 80px 0;
-  border-top: 1px solid
-    color-mix(in srgb, var(--default-color), transparent 90%);
+  padding: 10rem 0 5rem 0;
 }
 
 .page-title .heading h1 {
-  font-size: 38px;
+  font-size: 2.37rem;
   font-weight: 700;
 }
 
 .page-title nav {
   background-color: color-mix(in srgb, var(--default-color), transparent 90%);
-  padding: 20px 0;
+  padding: 1.25rem 0;
 }
 
 .page-title nav ol {
@@ -143,18 +143,18 @@ h6 {
   flex-wrap: wrap;
   list-style: none;
   margin: 0;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
 }
 
-.page-title nav ol li + li {
-  padding-left: 10px;
+.page-title nav ol li+li {
+  padding-left: 0.2rem;
 }
 
-.page-title nav ol li + li::before {
+.page-title nav ol li+li::before {
   content: "/";
   display: inline-block;
-  padding-right: 10px;
+  padding-right: 0.2rem;
   color: color-mix(in srgb, var(--default-color), transparent 70%);
 }
 
@@ -162,36 +162,37 @@ section,
 .section {
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 60px 0;
+  padding: 3.75rem 0;
   scroll-margin-top: 100px;
   overflow: clip;
 }
 
-#shadow-host-companion{
+#shadow-host-companion {
   padding: 0 !important;
   margin: 0 !important;
   height: 0 !important;
 }
 
-@media (max-width: 1199px) {
+@media (min-width: 1200px) {
+
   section,
   .section {
-    scroll-margin-top: 66px;
+    scroll-margin-top: 4.12rem;
   }
 }
 
 .section-title {
-  padding-bottom: 60px;
+  padding-bottom: 3.75rem;
   position: relative;
 }
 
 .section-title h2 {
-  font-size: 14px;
+  font-size: 0.87rem;
   font-weight: 500;
   padding: 0;
-  line-height: 1px;
+  line-height: 0.06rem;
   margin: 0;
-  letter-spacing: 1.5px;
+  letter-spacing: 0.09px;
   text-transform: uppercase;
   color: color-mix(in srgb, var(--default-color), transparent 50%);
   position: relative;
@@ -199,11 +200,11 @@ section,
 
 .section-title h2::after {
   content: "";
-  width: 120px;
-  height: 1px;
+  width: 7.5rem;
+  height: 0.06rem;
   display: inline-block;
   background: var(--accent-color);
-  margin: 4px 10px;
+  margin: 0.25rem 0.2rem;
 }
 
 .section-title div {

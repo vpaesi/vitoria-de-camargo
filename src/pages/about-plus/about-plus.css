@@ -20,3 +20,19 @@
 .hobby-about-inverted {
   grid-area: img;
 }
+
+@media (max-width: 1199px) {
+
+  .family-about img,
+  .hobby-about img,
+  .hobby-about-inverted img {
+    display: none;
+  }
+
+  .aside-family-about,
+  .container-hobby-about,
+  .container-hobby-about-inverted {
+    grid-template-columns: 1fr !important;
+  }
+
+}

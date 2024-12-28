@@ -64,11 +64,7 @@ export default function Resume() {
                   <li>{personalInfo.city}</li>
                   <li>{personalInfo.phone}</li>
                   <li>
-                    <a
-                      href="/cdn-cgi/l/email-protection"
-                      className="__cf_email__"
-                      data-cfemail="d6b7babfb5b3f8b4b7a4bdbab3af96b3aeb7bba6bab3f8b5b9bb"
-                    >
+                    <a href={personalInfo.socialMedia.email} target="_blank" rel="noopener noreferrer">
                       {personalInfo.email}
                     </a>
                   </li>
@@ -199,6 +195,7 @@ export default function Resume() {
                 alt="Ilustração de mulher clicando em 'START' em um notebook. Da tela do notebook sai um foguete indicando que a mulher está iniciando algo que a levará para cima"
                 height="500"
                 style={{ marginTop: "3rem" }}
+                className="resume-img"
               />
             </div>
 
