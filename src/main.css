@@ -1,0 +1,218 @@
+@import url('/content/vendors/bootstrap/css/bootstrap.min.css');
+@import url('/content/vendors/bootstrap-icons/bootstrap-icons.css');
+@import '/content/vendors/aos/aos.css';
+
+:root {
+  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Raleway", sans-serif;
+  --nav-font: "Poppins", sans-serif;
+}
+
+:root {
+  --background-color: #000000;
+  --default-color: #fafafa;
+  --heading-color: #ffffff;
+  --accent-color: #FD3379;
+  --surface-color: #1a1a1a;
+  --contrast-color: #000000;
+  --nav-color: #fafafa;
+  --nav-hover-color: #FD3379;
+  --nav-mobile-background-color: #1a1a1a;
+  --nav-dropdown-background-color: #1a1a1a;
+  --nav-dropdown-color: #fafafa;
+  --nav-dropdown-hover-color: #FD3379;
+}
+
+.light-background {
+  --background-color: #1a1a1a;
+  --surface-color: #343434;
+}
+
+.dark-background {
+  --background-color: rgba(15, 15, 15, 0.975);
+  --default-color: #ffffff;
+  --heading-color: #ffffff;
+  --surface-color: #292929f9;
+  --contrast-color: #000000;
+}
+
+:root {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  font-family: var(--default-font);
+  height: 100vh;
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: color-mix(in srgb, var(--accent-color), transparent 25%);
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--heading-color);
+  font-family: var(--heading-font);
+}
+
+.scroll-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 0.93rem;
+  bottom: -0.93rem;
+  z-index: 99999;
+  background-color: var(--accent-color);
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 3.12rem;
+  transition: all 0.4s;
+}
+
+.scroll-top i {
+  font-size: 1.5rem;
+  color: var(--contrast-color);
+  line-height: 0;
+}
+
+.scroll-top:hover {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+  color: var(--contrast-color);
+}
+
+.scroll-top.active {
+  visibility: visible;
+  opacity: 1;
+  bottom: 0.93rem;
+}
+
+@media screen and (max-width: 768px) {
+  [data-aos-delay] {
+    transition-delay: 0 !important;
+  }
+}
+
+#page-section {
+  padding: 1rem 0;
+}
+
+#page-section h3 {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.page-title {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  position: relative;
+}
+
+.page-title .heading {
+  padding: 10rem 0 5rem 0;
+}
+
+.page-title .heading h1 {
+  font-size: 2.37rem;
+  font-weight: 700;
+}
+
+.page-title nav {
+  background-color: color-mix(in srgb, var(--default-color), transparent 90%);
+  padding: 1.25rem 0;
+}
+
+.page-title nav ol {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.page-title nav ol li+li {
+  padding-left: 0.2rem;
+}
+
+.page-title nav ol li+li::before {
+  content: "/";
+  display: inline-block;
+  padding-right: 0.2rem;
+  color: color-mix(in srgb, var(--default-color), transparent 70%);
+}
+
+section,
+.section {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  padding: 3.75rem 0;
+  scroll-margin-top: 100px;
+  overflow: clip;
+}
+
+#shadow-host-companion {
+  padding: 0 !important;
+  margin: 0 !important;
+  height: 0 !important;
+}
+
+@media (min-width: 1200px) {
+
+  section,
+  .section {
+    scroll-margin-top: 4.12rem;
+  }
+}
+
+.section-title {
+  padding-bottom: 3.75rem;
+  position: relative;
+}
+
+.section-title h2 {
+  font-size: 0.87rem;
+  font-weight: 500;
+  padding: 0;
+  line-height: 0.06rem;
+  margin: 0;
+  letter-spacing: 0.09px;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--default-color), transparent 50%);
+  position: relative;
+}
+
+.section-title h2::after {
+  content: "";
+  width: 7.5rem;
+  height: 0.06rem;
+  display: inline-block;
+  background: var(--accent-color);
+  margin: 0.25rem 0.2rem;
+}
+
+.section-title div {
+  color: var(--heading-color);
+  margin: 0;
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: var(--heading-font);
+}

@@ -2,7 +2,7 @@
 
 <h2> EM ANDAMENTO<h2>
 
-![Screenshot da home](image.png)
+![Screenshot da home](/src/assets/img/Captura%20de%20tela%202024-12-24%20184146.png)
 
 <h3>Criado com react + vite em TS.</h3>
 
