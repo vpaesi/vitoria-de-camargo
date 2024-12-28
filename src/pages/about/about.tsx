@@ -76,6 +76,7 @@ useEffect(() => {
                         <a
                           href={personalInfo.socialMedia.github}
                           target="_blank"
+                          rel="noopener noreferrer"
                         >
                           github.com/vpaesi
                         </a>
@@ -108,6 +109,7 @@ useEffect(() => {
                         <a
                           href={personalInfo.socialMedia.email}
                           target="_blank"
+                          rel="noopener noreferrer"
                         >
                           paesivitoria@gmail.com
                         </a>

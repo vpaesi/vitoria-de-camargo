@@ -75,7 +75,7 @@ const Contact = () => {
                     <i className="icon bi bi-telephone flex-shrink-0"></i>
                     <div>
                       <h3>Whatsapp</h3>
-                      <a href={personalInfo.socialMedia.whats} target="_blank">
+                      <a href={personalInfo.socialMedia.whats} target="_blank" rel="noopener noreferrer">
                         {personalInfo.phone}
                       </a>
                     </div>
@@ -90,7 +90,7 @@ const Contact = () => {
                     <div>
                       <h3>Email</h3>
                       <p>
-                        <a href={`mailto:${personalInfo.email}`} target="_blank">
+                        <a href={`mailto:${personalInfo.email}`} target="_blank" rel="noopener noreferrer">
                           {personalInfo.email}
                         </a>
                       </p>
@@ -106,13 +106,13 @@ const Contact = () => {
                     <div>
                       <h3>Redes sociais</h3>
                       <div className="social-links">
-                        <a href={personalInfo.socialMedia.github} target="_blank">
+                        <a href={personalInfo.socialMedia.github} target="_blank" rel="noopener noreferrer">
                           <i className="bi bi-github"></i>
                         </a>
-                        <a href={personalInfo.socialMedia.linkedin} target="_blank">
+                        <a href={personalInfo.socialMedia.linkedin} target="_blank" rel="noopener noreferrer">
                           <i className="bi bi-linkedin"></i>
                         </a>
-                        <a href={personalInfo.socialMedia.instagram} target="_blank">
+                        <a href={personalInfo.socialMedia.instagram} target="_blank" rel="noopener noreferrer">
                           <i className="bi bi-instagram"></i>
                         </a>
                       </div>
@@ -204,12 +204,12 @@ const Contact = () => {
                 </div>
 
                 <div className="col-md-12 text-center">
-                  {loading && <div className="loading">Carregando...</div>}
+                  {loading && <div className="loading show">Carregando...</div>}
                   {errorMessage && (
-                    <div className="error-message">{errorMessage}</div>
+                    <div className="error-message show">{errorMessage}</div>
                   )}
                   {successMessage && (
-                    <div className="sent-message">{successMessage}</div>
+                    <div className="sent-message show">{successMessage}</div>
                   )}
                   
                   <button type="submit" disabled={loading}>

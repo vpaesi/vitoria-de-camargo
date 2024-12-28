@@ -39,16 +39,16 @@ export default function Home() {
             <span className="typed-cursor typed-cursor--blink"></span>
           </p>
           <div className="social-links">
-            <a href={personalInfo.socialMedia.github} target="_blank">
+            <a href={personalInfo.socialMedia.github} target="_blank" rel="noopener noreferrer">
               <i className="bi bi-github"></i>
             </a>
-            <a href={personalInfo.socialMedia.linkedin} target="_blank">
+            <a href={personalInfo.socialMedia.linkedin} target="_blank" rel="noopener noreferrer">
               <i className="bi bi-linkedin"></i>
             </a>
-            <a href={personalInfo.socialMedia.instagram} target="_blank">
+            <a href={personalInfo.socialMedia.instagram} target="_blank" rel="noopener noreferrer">
               <i className="bi bi-instagram"></i>
             </a>
-            <a href={personalInfo.socialMedia.email} target="_blank">
+            <a href={personalInfo.socialMedia.email} target="_blank" rel="noopener noreferrer">
               <i className="bi bi-envelope"></i>
             </a>
           </div>

@@ -9,6 +9,7 @@ export default function Header(): JSX.Element {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isFamilyOpen, setIsFamilyOpen] = useState(false);
   const [isTrajectoriesOpen, setIsTrajectoriesOpen] = useState(false);
+  const [isAboutPlusOpen, setIsAboutPlusOpen] = useState(false);
 
   const handleLinkClick = (path: string) => {
     setActiveLink(path);
@@ -18,8 +19,6 @@ export default function Header(): JSX.Element {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-
-  const [isAboutPlusOpen, setIsAboutPlusOpen] = useState(false);
 
   const toggleAboutPlusMenu = () => {
     setIsAboutPlusOpen(!isAboutPlusOpen);
@@ -31,6 +30,30 @@ export default function Header(): JSX.Element {
 
   const toggleTrajectoriesMenu = () => {
     setIsTrajectoriesOpen(!isTrajectoriesOpen);
+  };
+
+  const handleMouseEnterFamily = () => {
+    setIsFamilyOpen(true);
+  };
+
+  const handleMouseLeaveFamily = () => {
+    setIsFamilyOpen(false);
+  };
+
+  const handleMouseEnterTrajectories = () => {
+    setIsTrajectoriesOpen(true);
+  };
+
+  const handleMouseLeaveTrajectories = () => {
+    setIsTrajectoriesOpen(false);
+  };
+
+  const handleMouseEnterAboutPlus = () => {
+    setIsAboutPlusOpen(true);
+  };
+
+  const handleMouseLeaveAboutPlus = () => {
+    setIsAboutPlusOpen(false);
   };
 
   const navMenu = (
@@ -75,11 +98,18 @@ export default function Header(): JSX.Element {
             Portfolio
           </a>
         </li>
-        <li className="dropdown">
+        <li 
+          className="dropdown"
+          onMouseEnter={handleMouseEnterAboutPlus}
+          onMouseLeave={handleMouseLeaveAboutPlus}
+        >
           <a
             href="/about-plus"
             className={activeLink.includes("about-plus") ? "active" : ""}
             onClick={(e) => {
+              if (!(e.target as HTMLElement).classList.contains("toggle-dropdown")){
+                return;
+              }
               e.preventDefault();
               toggleAboutPlusMenu();
             }}
@@ -90,108 +120,114 @@ export default function Header(): JSX.Element {
             ></i>
           </a>
           {isAboutPlusOpen && (
-          <ul>
-            <li className="dropdown">
-              <a
-                href="/family"
-                className={activeLink.includes("family") ? "active" : ""}
-                onClick={(e) => {
-                  e.preventDefault();
-                  toggleFamilyMenu();
-                }}
+            <ul>
+              <li 
+                className="dropdown"
+                onMouseEnter={handleMouseEnterFamily}
+                onMouseLeave={handleMouseLeaveFamily}
               >
-                <span>Família</span>
-                <i
-                className={`bi ${
-                  isFamilyOpen ? "bi-chevron-up" : "bi-chevron-down"
-                } toggle-dropdown`}
-                ></i>
-              </a>
-              {isFamilyOpen && (
-              <ul>
-                <li>
-                  <a
-                    href="/family#gave"
-                    className={activeLink === "/family#gave" ? "active" : ""}
-                  >
-                    Família que Deus me deu
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/family#made"
-                    className={activeLink === "/family#made" ? "active" : ""}
-                  >
-                    Família que criei
-                  </a>
-                </li>
-              </ul>
-              )}
-            </li>
+                <a
+                  href="/family"
+                  className={activeLink.includes("family") ? "active" : ""}
+                  onClick={(e) => {
+                    if (!(e.target as HTMLElement).classList.contains("toggle-dropdown")){
+                      return;
+                    }
+                    e.preventDefault();
+                    toggleFamilyMenu();
+                  }}
+                >
+                  <span>Família</span>
+                  <i
+                    className={`bi ${
+                      isFamilyOpen ? "bi-chevron-up" : "bi-chevron-down"
+                    } toggle-dropdown`}
+                  ></i>
+                </a>
+                {isFamilyOpen && (
+                  <ul>
+                    <li>
+                      <a
+                        href="/family#gave"
+                        className={activeLink === "/family#gave" ? "active" : ""}
+                      >
+                        Família que Deus me deu
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="/family#made"
+                        className={activeLink === "/family#made" ? "active" : ""}
+                      >
+                        Família que criei
+                      </a>
+                    </li>
+                  </ul>
+                )}
+              </li>
 
-            <li>
-              <a
-                href="/hobbies"
-                className={activeLink === "/hobbies" ? "active" : ""}
-              >
-                Hobbies
-              </a>
-            </li>
+              <li>
+                <a
+                  href="/hobbies"
+                  className={activeLink === "/hobbies" ? "active" : ""}
+                >
+                  Hobbies
+                </a>
+              </li>
 
-            <li className="dropdown">
-              <a
-                href="/trajectories"
-                className={activeLink.includes("trajectories") ? "active" : ""}
-                onClick={(e) => {
-                  e.preventDefault();
-                  toggleTrajectoriesMenu();
-                }}
+              <li 
+                className="dropdown"
+                onMouseEnter={handleMouseEnterTrajectories}
+                onMouseLeave={handleMouseLeaveTrajectories}
               >
-                <span>Trajetórias</span>
-                <i
-                className={`bi ${
-                  isTrajectoriesOpen ? "bi-chevron-up" : "bi-chevron-down"
-                } toggle-dropdown`}
-                ></i>
-              </a>
-              {isTrajectoriesOpen && (
-              <ul>
-                <li>
-                  <a
-                    href="/trajectories#professional"
-                    className={
-                      activeLink === "/trajectories#professional"
-                        ? "active"
-                        : ""
+                <a
+                  href="/trajectories"
+                  className={activeLink.includes("trajectories") ? "active" : ""}
+                  onClick={(e) => {
+                    if (!(e.target as HTMLElement).classList.contains("toggle-dropdown")){
+                      return;
                     }
-                  >
-                    Trajetória Profissional
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/trajectories#academic"
-                    className={
-                      activeLink === "/trajectories#academic" ? "active" : ""
-                    }
-                  >
-                    Trajetória acadêmica
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/trajectories#academic"
-                    className={
-                      activeLink === "/trajectories#academic" ? "active" : ""
-                    }
-                  >
-                    Trajetória pessoal
-                  </a>
-                </li>
-              </ul>
-              )}
-            </li>
-          </ul>
+                    e.preventDefault();
+                    toggleTrajectoriesMenu();
+                  }}
+                >
+                  <span>Trajetórias</span>
+                  <i
+                    className={`bi ${
+                      isTrajectoriesOpen ? "bi-chevron-up" : "bi-chevron-down"
+                    } toggle-dropdown`}
+                  ></i>
+                </a>
+                {isTrajectoriesOpen && (
+                  <ul>
+                    <li>
+                      <a
+                        href="/trajectories#professional"
+                        className={activeLink === "/trajectories#professional" ? "active" : ""}
+                      >
+                        Trajetória Profissional
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="/trajectories#academic"
+                        className={activeLink === "/trajectories#academic" ? "active" : ""}
+                      >
+                        Trajetória acadêmica
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="/trajectories#personal"
+                        className={activeLink === "/trajectories#personal" ? "active" : ""}
+                      >
+                        Trajetória pessoal
+                      </a>
+                    </li>
+                  </ul>
+                )}
+              </li>
+            </ul>
           )}
         </li>
         <li>
@@ -215,9 +251,8 @@ export default function Header(): JSX.Element {
 
         <nav>{navMenu}</nav>
         <i 
-        className={`mobile-nav-toggle d-xl-none bi ${isMenuOpen ? "bi-x" : "bi-list"
-        }`}
-        onClick={toggleMenu}
+          className={`mobile-nav-toggle d-xl-none bi ${isMenuOpen ? "bi-x" : "bi-list"}`}
+          onClick={toggleMenu}
         ></i>
       </div>
     </header>

@@ -36,210 +36,249 @@ export default function Portfolio() {
         </nav>
       </div>
 
-      <section id="page-section" className="page-section">
-        <h3 data-aos="fade-up" data-aos-delay="200">
-          <em>Projetos</em>
-        </h3>
-        <br />
-        <div className="container">
+      <SectionProjects />
+      <SectionStudies />
+    </section>
+  );
+}
+function SectionProjects() {
+  return (
+    <section id="page-section" className="page-section">
+      <h3 data-aos="fade-up" data-aos-delay="200">
+        <em>Projetos</em>
+      </h3>
+      <br />
+      <div className="container">
+        <div
+          data-default-filter="*"
+          data-layout="masonry"
+          data-sort="original-order"
+        >
           <div
-            className="isotope-layout"
-            data-default-filter="*"
-            data-layout="masonry"
-            data-sort="original-order"
+            className="row gy-4 isotope-container"
+            data-aos="fade-up"
+            data-aos-delay="200"
           >
-            <div
-              className="row gy-4 isotope-container"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-                <div className="portfolio-content h-100">
-                  <img
-                    src="/src/assets/img/spinning-joias.png"
-                    className="img-fluid"
-                    alt="Screenshot do site Spinning Joias"
-                  />
-                  <div className="portfolio-info">
-                    <h4>Spinning Joias</h4>
-                    <p>
-                      Aplicação estilo catálogo para vendas de semi joias
-                      especializada em patinação artística.
-                    </p>
+
+            <div className="col-lg-4 col-md-6 portfolio-item">
+              <div className="portfolio-content h-100">
+                <img
+                  src="/src/assets/img/spinning-joias.png"
+                  className="img-fluid"
+                  alt="Captura de tela do site Spinning Joias apresentando um catálogo de joias"
+                />
+                <div className="portfolio-info">
+                  <h4>Spinning Joias</h4>
+                  <p>
+                    Aplicação estilo catálogo para vendas de semi joias especializada em patinação artística.
+                  </p>
+                  <div className="i-links">
                     <a
                       href="https://spinning-joias.vercel.app/"
                       target="_blank"
+                      rel="noopener noreferrer"
                       title="Ver site"
-                      data-gallery="portfolio-gallery-app"
-                      className="glightbox preview-link"
+                      className="details-link"
                     >
-                      <i className="bi bi-zoom-in"></i>
+                      Ver site
+                      <i className="bi bi-eye"></i>
                     </a>
                     <a
                       href="https://github.com/vpaesi/spinning-joias"
                       target="_blank"
+                      rel="noopener noreferrer"
                       title="Ver repositório"
                       className="details-link"
                     >
+                     Ver repositório
                       <i className="bi bi-link-45deg"></i>
                     </a>
                   </div>
                 </div>
               </div>
+            </div>
 
-              <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-                <div className="portfolio-content h-100">
-                  <img
-                    src="/src/assets/img/primeiro-portfolio.png"
-                    className="img-fluid"
-                    alt="Screenshot do meu primeiro portfólio"
-                  />
-                  <div className="portfolio-info">
-                    <h4>Meu primeiro porfólio</h4>
-                    <p>Meu primeiro porfólio, criado em julho de 2024.</p>
+            <div className="col-lg-4 col-md-6 portfolio-item">
+              <div className="portfolio-content h-100">
+                <img
+                  src="/src/assets/img/primeiro-portfolio.png"
+                  className="img-fluid"
+                  alt="Captura de tela do meu primeiro portfólio, apresentando uma foto minha e uma breve biografia"
+                />
+                <div className="portfolio-info">
+                  <h4>Meu primeiro portfólio</h4>
+                  <p>Meu primeiro portfólio, criado em julho de 2024.</p>
+                  <div className="i-links">
                     <a
                       href="https://portfolio-vitoria-de-camargo.vercel.app/"
                       target="_blank"
+                      rel="noopener noreferrer"
                       title="Ver site"
                       data-gallery="portfolio-gallery-app"
-                      className="glightbox preview-link"
+                      className="details-link"
                     >
-                      <i className="bi bi-zoom-in"></i>
+                      Ver site
+                      <i className="bi bi-eye"></i>
                     </a>
                     <a
                       href="https://github.com/vpaesi/portfolio-vitoria-de-camargo"
                       target="_blank"
+                      rel="noopener noreferrer"
                       title="Ver repositório"
                       className="details-link"
                     >
-                      <i className="bi bi-link-45deg"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-                <div className="portfolio-content h-100">
-                  <img
-                    src="src/assets/img/repo-ponte-de-geracoes.png"
-                    className="img-fluid"
-                    alt="Screenshot do repositório do projeto Ponte de Gerações"
-                  />
-                  <div className="portfolio-info">
-                    <h4>Ponte de Gerações</h4>
-                    <p>
-                      Aplicação que conecta jovens e idosos por uma causa
-                      social. Elaborada em dupla.
-                    </p>
-                    <a
-                      href="https://github.com/vpaesi/ponte-de-geracoes"
-                      target="_blank"
-                      title="Ver repositório"
-                      data-gallery="portfolio-gallery-app"
-                      className="glightbox preview-link"
-                    >
+                      Ver repositório
                       <i className="bi bi-link-45deg"></i>
                     </a>
                   </div>
                 </div>
               </div>
             </div>
+
+            <div className="col-lg-4 col-md-6 portfolio-item">
+              <div className="portfolio-content h-100">
+                <img
+                  src="src/assets/img/repo-ponte-de-geracoes.png"
+                  className="img-fluid"
+                  alt="Captura de tela do repositório no GitHub do projeto Ponte de Gerações"
+                />
+                <div className="portfolio-info">
+                  <h4>Ponte de Gerações</h4>
+                  <p>
+                    Aplicação que conecta jovens e idosos por uma causa social. Elaborada em dupla.
+                  </p>
+                  <div className="i-links">
+                    <a
+                      href="https://github.com/vpaesi/ponte-de-geracoes"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="Ver repositório"
+                      className="details-link"
+                    >
+                      Ver repositório
+                      <i className="bi bi-link-45deg"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
+      </div>
+    </section>
+  );
+};
 
-        <h3 data-aos="fade-up" data-aos-delay="200">
-          <em>Estudos</em>
-        </h3>
-        <br />
-        <div className="container">
+function SectionStudies() {
+  return (
+    <section id="page-section" className="page-section">
+      <h3 data-aos="fade-up" data-aos-delay="200">
+        <em>Estudos</em>
+      </h3>
+      <br />
+      <div className="container">
+        <div
+          data-default-filter="*"
+          data-layout="masonry"
+          data-sort="original-order"
+        >
           <div
-            className="isotope-layout"
-            data-default-filter="*"
-            data-layout="masonry"
-            data-sort="original-order"
+            className="row gy-4 isotope-container"
+            data-aos="fade-up"
+            data-aos-delay="200"
           >
-            <div
-              className="row gy-4 isotope-container"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-                <div className="portfolio-content h-100">
-                  <img
-                    src="/src/assets/img/repo-frontend.png"
-                    className="img-fluid"
-                    alt="Screenshot do repositório de projetos de Front-end da Alura"
-                  />
-                  <div className="portfolio-info">
-                    <h4>Front-end: Alura</h4>
-                    <p>
-                      Repositório com todos os projetos desenvolvidos durante as
-                      formações de Front-end da Alura. Cada projeto reflete as
-                      habilidades e os conceitos aprendidos.
-                    </p>
+
+            <div className="col-lg-4 col-md-6 portfolio-item">
+              <div className="portfolio-content h-100">
+                <img
+                  src="/src/assets/img/repo-frontend.png"
+                  className="img-fluid"
+                  alt="Captura de tela do repositório no GitHub tela projetos de Front-end da Alura"
+                />
+                <div className="portfolio-info">
+                  <h4>Front-end: Alura</h4>
+                  <p>
+                    Repositório com todos os projetos desenvolvidos durante as
+                    formações de Front-end da Alura. Cada projeto reflete as
+                    habilidades e os conceitos aprendidos.
+                  </p>
+                  <div className="i-links">
                     <a
                       href="https://github.com/vpaesi/alura-front-projects"
                       target="_blank"
+                      rel="noopener noreferrer"
                       title="Ver repositório"
                       className="details-link"
                     >
+                      Ver repositório
                       <i className="bi bi-link-45deg"></i>
                     </a>
                   </div>
                 </div>
               </div>
+            </div>
 
-              <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-                <div className="portfolio-content h-100">
-                  <img
-                    src="/src/assets/img/repo-backend.png"
-                    className="img-fluid"
-                    alt="Screenshot do repositório de projetos de Back-end da Alura"
-                  />
-                  <div className="portfolio-info">
-                    <h4>Back-end: Alura</h4>
-                    <p>
-                      Repositório com todos os projetos desenvolvidos durante as
-                      formações de Front-end da Alura. Cada projeto reflete as
-                      habilidades e os conceitos aprendidos.
-                    </p>
+            <div className="col-lg-4 col-md-6 portfolio-item ">
+              <div className="portfolio-content h-100">
+                <img
+                  src="/src/assets/img/repo-backend.png"
+                  className="img-fluid"
+                  alt="Captura de tela do repositório no GitHub tela projetos de Back-end da Alura"
+                />
+                <div className="portfolio-info">
+                  <h4>Back-end: Alura</h4>
+                  <p>
+                    Repositório com todos os projetos desenvolvidos durante as
+                    formações de Front-end da Alura. Cada projeto reflete as
+                    habilidades e os conceitos aprendidos.
+                  </p>
+                  <div className="i-links">
                     <a
                       href="https://github.com/vpaesi/alura-back-projects"
                       target="_blank"
+                      rel="noopener noreferrer"
                       title="Ver repositório"
                       className="details-link"
                     >
+                      Ver repositório
                       <i className="bi bi-link-45deg"></i>
                     </a>
                   </div>
                 </div>
               </div>
+            </div>
 
-              <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-                <div className="portfolio-content h-100">
-                  <img
-                    src="/src/assets/img/agencia-viagens.png"
-                    className="img-fluid"
-                    alt="Screenshot do site Agência de Turismo"
-                  />
-                  <div className="portfolio-info">
-                    <h4>Agência de turismo</h4>
-                    <p>Aplicação fictícia para compra de pacotes de viagens.</p>
+            <div className="col-lg-4 col-md-6 portfolio-item ">
+              <div className="portfolio-content h-100">
+                <img
+                  src="/src/assets/img/agencia-viagens.png"
+                  className="img-fluid"
+                  alt="Captura de tela do site Agência de Turismo, apresentando um carrossel com imagens de locais turísticos do Brasil, abaixo inicia a sessão 'Conheça nossos Pacotes'"
+                />
+                <div className="portfolio-info">
+                  <h4>Agência de turismo</h4>
+                  <p>Aplicação fictícia para compra de pacotes de viagens.</p>
+                  <div className="i-links">
                     <a
                       href="https://vpaesi.github.io/agencia-turismo/"
                       target="_blank"
+                      rel="noopener noreferrer"
                       title="Ver site"
                       data-gallery="portfolio-gallery-app"
-                      className="glightbox preview-link"
+                      className="details-link"
                     >
-                      <i className="bi bi-zoom-in"></i>
+                      Ver site
+                      <i className="bi bi-eye"></i>
                     </a>
                     <a
                       href="https://github.com/vpaesi/agencia-turismo"
                       target="_blank"
+                      rel="noopener noreferrer"
                       title="Ver repositório"
                       className="details-link"
                     >
+                     Ver repositório
                       <i className="bi bi-link-45deg"></i>
                     </a>
                   </div>
@@ -248,7 +287,7 @@ export default function Portfolio() {
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </section>
   );
 }

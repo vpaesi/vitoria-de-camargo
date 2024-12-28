@@ -64,7 +64,7 @@ export default function Resume() {
                   <li>{personalInfo.city}</li>
                   <li>{personalInfo.phone}</li>
                   <li>
-                    <a href={personalInfo.socialMedia.email} target="_blank">
+                    <a href={personalInfo.socialMedia.email} target="_blank" rel="noopener noreferrer">
                       {personalInfo.email}
                     </a>
                   </li>

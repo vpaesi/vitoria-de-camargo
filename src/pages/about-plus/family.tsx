@@ -40,7 +40,6 @@ export default function Family() {
           <br />
           <div className="container">
             <div
-              className="isotope-layout"
               data-default-filter="*"
               data-layout="masonry"
               data-sort="original-order"
@@ -159,7 +158,6 @@ export default function Family() {
                 <br />
                 <div className="container">
                   <div
-                    className="isotope-layout"
                     data-default-filter="*"
                     data-layout="masonry"
                     data-sort="original-order"
