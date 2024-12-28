@@ -52,7 +52,6 @@
   }
 
   .hero .social-links a {
-    background-color: color-mix(in srgb, var(--default-color), transparent 90%);
     color: var(--default-color);
     font-size: 0.87rem;
     width: 2.5rem;
@@ -72,7 +71,7 @@
 
 @media (max-width: 1199px) {
   .hero .social-links a {
-    background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+    color: var(--accent-color);
   }
 }
 

@@ -81,7 +81,7 @@ function SectionProjects() {
                       className="details-link"
                     >
                       Ver site
-                      <i className="bi bi-eye"></i>
+                      <i className="icone-bi bi bi-eye"></i>
                     </a>
                     <a
                       href="https://github.com/vpaesi/spinning-joias"
@@ -91,7 +91,7 @@ function SectionProjects() {
                       className="details-link"
                     >
                       Ver repositório
-                      <i className="bi bi-link-45deg"></i>
+                      <i className="icone-bi bi bi-link-45deg"></i>
                     </a>
                   </div>
                 </div>
@@ -118,7 +118,7 @@ function SectionProjects() {
                       className="details-link"
                     >
                       Ver site
-                      <i className="bi bi-eye"></i>
+                      <i className="icone-bi bi bi-eye"></i>
                     </a>
                     <a
                       href="https://github.com/vpaesi/portfolio-vitoria-de-camargo"
@@ -128,7 +128,7 @@ function SectionProjects() {
                       className="details-link"
                     >
                       Ver repositório
-                      <i className="bi bi-link-45deg"></i>
+                      <i className="icone-bi bi bi-link-45deg"></i>
                     </a>
                   </div>
                 </div>
@@ -144,9 +144,7 @@ function SectionProjects() {
                 />
                 <div className="portfolio-info">
                   <h4>Ponte de Gerações</h4>
-                  <p>
-                    Aplicação que conecta jovens e idosos por uma causa social. Elaborada em dupla.
-                  </p>
+                  <p>Aplicação que conecta jovens e idosos por uma causa social. Elaborada em dupla.</p>
                   <div className="i-links">
                     <a
                       href="https://github.com/vpaesi/ponte-de-geracoes"
@@ -156,7 +154,7 @@ function SectionProjects() {
                       className="details-link"
                     >
                       Ver repositório
-                      <i className="bi bi-link-45deg"></i>
+                      <i className="icone-bi bi bi-link-45deg"></i>
                     </a>
                   </div>
                 </div>
@@ -199,9 +197,8 @@ function SectionStudies() {
                 <div className="portfolio-info">
                   <h4>Front-end: Alura</h4>
                   <p>
-                    Repositório com todos os projetos desenvolvidos durante as
-                    formações de Front-end da Alura. Cada projeto reflete as
-                    habilidades e os conceitos aprendidos.
+                    Repositório com projetos desenvolvidos durante as
+                    formações de Front-end da Alura.
                   </p>
                   <div className="i-links">
                     <a
@@ -212,7 +209,7 @@ function SectionStudies() {
                       className="details-link"
                     >
                       Ver repositório
-                      <i className="bi bi-link-45deg"></i>
+                      <i className="icone-bi bi bi-link-45deg"></i>
                     </a>
                   </div>
                 </div>
@@ -229,9 +226,8 @@ function SectionStudies() {
                 <div className="portfolio-info">
                   <h4>Back-end: Alura</h4>
                   <p>
-                    Repositório com todos os projetos desenvolvidos durante as
-                    formações de Front-end da Alura. Cada projeto reflete as
-                    habilidades e os conceitos aprendidos.
+                    Repositório com projetos desenvolvidos durante as
+                    formações de Front-end da Alura.
                   </p>
                   <div className="i-links">
                     <a
@@ -242,14 +238,14 @@ function SectionStudies() {
                       className="details-link"
                     >
                       Ver repositório
-                      <i className="bi bi-link-45deg"></i>
+                      <i className="icone-bi bi bi-link-45deg"></i>
                     </a>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="col-lg-4 col-md-6 portfolio-item ">
+            <div className="col-lg-4 col-md-6 portfolio-item">
               <div className="portfolio-content h-100">
                 <img
                   src="/src/assets/img/agencia-viagens.png"
@@ -265,11 +261,10 @@ function SectionStudies() {
                       target="_blank"
                       rel="noopener noreferrer"
                       title="Ver site"
-                      data-gallery="portfolio-gallery-app"
                       className="details-link"
                     >
                       Ver site
-                      <i className="bi bi-eye"></i>
+                      <i className="icone-bi bi bi-eye"></i>
                     </a>
                     <a
                       href="https://github.com/vpaesi/agencia-turismo"
@@ -279,7 +274,7 @@ function SectionStudies() {
                       className="details-link"
                     >
                       Ver repositório
-                      <i className="bi bi-link-45deg"></i>
+                      <i className="icone-bi bi bi-link-45deg"></i>
                     </a>
                   </div>
                 </div>

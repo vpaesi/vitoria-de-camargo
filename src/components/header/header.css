@@ -1,3 +1,7 @@
+#header  {
+  background-color: rgba(0, 0, 0, 0.8);
+  }
+
 .header {
   --background-color: rgba(0, 0, 0, 0);
   color: var(--default-color);
@@ -150,7 +154,6 @@
   }
 }
 
-/* Tablets e laptops */
 @media (max-width: 1199px) {
   .sitename {
     padding: 1rem 0 0 5rem;

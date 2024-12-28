@@ -120,9 +120,7 @@
   .i-links {
     display: flex;
     flex-wrap: nowrap;
-    /* Garantir que os links fiquem em uma linha */
     gap: 0.5rem;
-    /* Ajustar o espaçamento entre os links */
     justify-content: center;
   }
 
@@ -132,10 +130,11 @@
     align-items: center;
     text-align: center;
     margin: 0 0.5rem;
+    font-size: 1rem !important;
   }
 
-  .bi {
-    margin-left: 0.3rem;
+  .icone-bi {
+    margin-left: 0.5rem !important;
     display: inline;
     font-size: 1rem;
   }
