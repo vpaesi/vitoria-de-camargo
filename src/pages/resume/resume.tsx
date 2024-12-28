@@ -195,6 +195,7 @@ export default function Resume() {
                 alt="Ilustração de mulher clicando em 'START' em um notebook. Da tela do notebook sai um foguete indicando que a mulher está iniciando algo que a levará para cima"
                 height="500"
                 style={{ marginTop: "3rem" }}
+                className="resume-img"
               />
             </div>
 

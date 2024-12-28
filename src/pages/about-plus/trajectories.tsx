@@ -314,11 +314,8 @@ export default function Trajectories() {
               <div>
                 <article className="aside-right">
                   <p>
-                    O que eu posso dizer é que já passei poucas e boas
-                    (depressão, automutilação, assédio, estupro, a doença visual
-                    do meu irmão, a quase morte da minha mãe, a separação dos
-                    meus pais... a lista é longa), mas as boas que passei são
-                    realmente muito boas e me dão motivo para acordar e sorrir
+                    O que eu posso dizer é que já passei poucas e boas, mas as realmente boas que passei são
+                    verdadeiramente muito boas e me dão motivo para acordar e sorrir
                     todos os dias. Eu vi meu irmão e minha irmã nascerem, eu vi
                     minha mãe renascer, vi minha mãe virar concursada, meu irmão
                     melhorar da visão, minha irmã se tornar um exemplo (mesmo
@@ -331,9 +328,18 @@ export default function Trajectories() {
                     até a barriga doer.
                   </p>
                   <p>
-                    Como diz a Demi Lovato (minha maior ídola): "I'm survivor in
-                    more ways than you know" e "I guess I'm mastering the art of
-                    Starting over"
+                    Como diz a Demi Lovato (minha maior ídola):{" "}
+                    <a 
+                      href="https://www.youtube.com/watch?v=UFeJkfB4xKo" 
+                      target="_blank">
+                        "I'm survivor in more ways than you know"
+                    </a> e {" "}
+                    <a
+                    href="https://www.youtube.com/watch?v=ZZhwUqzeZpY"
+                    target="_blank">
+                      "I guess I'm mastering the art of starting over"
+                    </a>
+                    .
                   </p>
                 </article>
               </div>

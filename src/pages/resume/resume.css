@@ -53,3 +53,9 @@
   background: var(--background-color);
   border: 2px solid var(--accent-color);
 }
+
+@media (max-width: 1199px) {
+    .resume-img{
+      display: none;
+    }
+}

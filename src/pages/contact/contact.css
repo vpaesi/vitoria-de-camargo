@@ -44,6 +44,15 @@
   margin: 1rem 5rem;
 }
 
+@media (max-width: 1199px) {
+  .info-item, .mapswrapper {
+    display: none !important;
+  }
+  .email-form {
+    box-shadow: none
+  }
+}
+
 @media (max-width: 575px) {
 .email-form {
     padding: 1.2rem;
