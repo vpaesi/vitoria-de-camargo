@@ -65,7 +65,6 @@ const Contact = () => {
           <nav className="breadcrumbs">
             <div className="container">
               <div className="row">
-                {/* Links de Contato e Endereço em colunas */}
                 <div className="col-md-6">
                   <div
                     className="info-item d-flex align-items-center"
@@ -75,7 +74,10 @@ const Contact = () => {
                     <i className="icon bi bi-telephone flex-shrink-0"></i>
                     <div>
                       <h3>Whatsapp</h3>
-                      <a href={personalInfo.socialMedia.whats} target="_blank" rel="noopener noreferrer">
+                      <a
+                        href={personalInfo.socialMedia.whats}
+                        target="_blank"
+                        rel="noopener noreferrer">
                         {personalInfo.phone}
                       </a>
                     </div>
@@ -90,7 +92,10 @@ const Contact = () => {
                     <div>
                       <h3>Email</h3>
                       <p>
-                        <a href={`mailto:${personalInfo.email}`} target="_blank" rel="noopener noreferrer">
+                        <a
+                          href={`mailto:${personalInfo.email}`}
+                          target="_blank"
+                          rel="noopener noreferrer">
                           {personalInfo.email}
                         </a>
                       </p>
@@ -106,13 +111,20 @@ const Contact = () => {
                     <div>
                       <h3>Redes sociais</h3>
                       <div className="social-links">
-                        <a href={personalInfo.socialMedia.github} target="_blank" rel="noopener noreferrer">
+                        <a
+                          href={personalInfo.socialMedia.github}
+                          target="_blank"
+                          rel="noopener noreferrer">
                           <i className="bi bi-github"></i>
                         </a>
-                        <a href={personalInfo.socialMedia.linkedin} target="_blank" rel="noopener noreferrer">
+                        <a href={personalInfo.socialMedia.linkedin}
+                          target="_blank"
+                          rel="noopener noreferrer">
                           <i className="bi bi-linkedin"></i>
                         </a>
-                        <a href={personalInfo.socialMedia.instagram} target="_blank" rel="noopener noreferrer">
+                        <a href={personalInfo.socialMedia.instagram}
+                          target="_blank"
+                          rel="noopener noreferrer">
                           <i className="bi bi-instagram"></i>
                         </a>
                       </div>
@@ -129,18 +141,18 @@ const Contact = () => {
                     <i className="icon bi bi-geo-alt flex-shrink-0"></i>
                     <div>
                       <h3>Endereço</h3>
-                      <p id="address">{useAddress()}</p>                    
-                    </div>                 
+                      <p id="address">{useAddress()}</p>
+                    </div>
                   </div>
                   <div className="mapswrapper">
-                        <iframe
-                          width="75%"
-                          height="160"
-                          loading="lazy"
-                          allowFullScreen
-                          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=Bairro%20formoza&zoom=15&maptype=roadmap"
-                        ></iframe>
-                      </div>
+                    <iframe
+                      width="75%"
+                      height="160"
+                      loading="lazy"
+                      allowFullScreen
+                      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=Bairro%20formoza&zoom=15&maptype=roadmap"
+                    ></iframe>
+                  </div>
                 </div>
               </div>
             </div>
@@ -211,7 +223,7 @@ const Contact = () => {
                   {successMessage && (
                     <div className="sent-message show">{successMessage}</div>
                   )}
-                  
+
                   <button type="submit" disabled={loading}>
                     Enviar email
                   </button>

@@ -67,7 +67,7 @@
 
   .hero .social-links a:hover {
     background-color: var(--accent-color);
-}
+  }
 }
 
 @media (max-width: 1199px) {
@@ -77,10 +77,11 @@
 }
 
 @media (max-width: 768px) {
-  #hero{
+  #hero {
     padding-left: 2rem;
-  
+
   }
+
   .hero h2 {
     font-size: 2rem;
   }

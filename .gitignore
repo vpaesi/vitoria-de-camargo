@@ -11,7 +11,6 @@ node_modules
 dist
 dist-ssr
 *.local
-content
 comentarios-pessoais
 
 # Editor directories and files

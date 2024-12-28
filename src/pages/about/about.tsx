@@ -3,13 +3,13 @@ import "./about.css";
 import personalInfo from "../../utils/personal-info";
 
 export default function About() {
-useEffect(() => {
-  const progressBars = document.querySelectorAll(".progress-bar");
-  progressBars.forEach((bar) => {
-    const progressValue = bar.getAttribute("aria-valuenow");
-    (bar as HTMLElement).style.width = `${progressValue}%`;
-  });
-}, []);
+  useEffect(() => {
+    const progressBars = document.querySelectorAll(".progress-bar");
+    progressBars.forEach((bar) => {
+      const progressValue = bar.getAttribute("aria-valuenow");
+      (bar as HTMLElement).style.width = `${progressValue}%`;
+    });
+  }, []);
 
   return (
     <section className="about-page">
@@ -136,7 +136,7 @@ useEffect(() => {
         </div>
       </section>
 
-      <section id="skills" className="skills section" style={{paddingTop: "0.2rem"}}>
+      <section id="skills" className="skills section" style={{ paddingTop: "0.2rem" }}>
         <div className="container section-title" data-aos="fade-up">
           <h2>Skills</h2>
           <div>
@@ -264,7 +264,12 @@ useEffect(() => {
               <div className="features-item">
                 <i className="bi bi-palette" style={{ color: "#ffbb2c" }}></i>
                 <h3>
-                  <a href="https://www.instagram.com/pinturaZen" className="stretched-link">
+                  <a
+                    href="https://www.instagram.com/pinturaZen"
+                    className="stretched-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     Pintura
                   </a>
                 </h3>
@@ -279,7 +284,12 @@ useEffect(() => {
               <div className="features-item">
                 <i className="bi bi-camera" style={{ color: "#5578ff" }}></i>
                 <h3>
-                  <a href={personalInfo.socialMedia.instagram} className="stretched-link">
+                  <a
+                    href={personalInfo.socialMedia.instagram}
+                    className="stretched-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     Fotografia
                   </a>
                 </h3>
@@ -294,7 +304,12 @@ useEffect(() => {
               <div className="features-item">
                 <i className="bi bi-tv" style={{ color: "#e361ff" }}></i>
                 <h3>
-                  <a href="https://tvtime.com/r/36zZa" className="stretched-link">
+                  <a
+                    href="https://tvtime.com/r/36zZa"
+                    className="stretched-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     Séries e Filmes
                   </a>
                 </h3>
@@ -309,7 +324,7 @@ useEffect(() => {
               <div className="features-item">
                 <i className="bi bi-backpack2" style={{ color: "#47aeff" }}></i>
                 <h3>
-                  <p className="stretched-link" style={{margin: 0}}>
+                  <p className="stretched-link" style={{ margin: 0 }}>
                     Viagens
                   </p>
                 </h3>
@@ -324,7 +339,12 @@ useEffect(() => {
               <div className="features-item">
                 <i className="bi bi-mortarboard" style={{ color: "#ffa76e" }}></i>
                 <h3>
-                  <a href="https://cursos.alura.com.br/user/viehdevitoria" className="stretched-link">
+                  <a
+                    href="https://cursos.alura.com.br/user/viehdevitoria"
+                    className="stretched-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     Estudos
                   </a>
                 </h3>
@@ -339,7 +359,12 @@ useEffect(() => {
               <div className="features-item">
                 <i className="bi bi-book" style={{ color: "#11dbcf" }}></i>
                 <h3>
-                  <a href="https://www.skoob.com.br/perfil/viehdevitoria" className="stretched-link">
+                  <a
+                    href="https://www.skoob.com.br/perfil/viehdevitoria"
+                    className="stretched-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     Livros
                   </a>
                 </h3>
@@ -357,7 +382,7 @@ useEffect(() => {
                   style={{ color: "#4233ff" }}
                 ></i>
                 <h3>
-                  <p className="stretched-link"  style={{margin: 0}}>
+                  <p className="stretched-link" style={{ margin: 0 }}>
                     Motociclismo
                   </p>
                 </h3>
@@ -372,13 +397,13 @@ useEffect(() => {
               <div className="features-item">
                 <i className="bi bi-dice-5" style={{ color: "#b2904f" }}></i>
                 <h3>
-                  <p className="stretched-link"  style={{margin: 0}}>
+                  <p className="stretched-link" style={{ margin: 0 }}>
                     Board Games
                   </p>
                 </h3>
               </div>
             </div>
-       
+
           </div>
         </div>
       </section>

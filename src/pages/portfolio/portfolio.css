@@ -17,8 +17,7 @@
   font-weight: 700;
   margin-bottom: 1.2rem;
   padding-bottom: 1.2rem;
-  border-bottom: 0.06rem solid
-    color-mix(in srgb, var(--default-color), transparent 85%);
+  border-bottom: 0.06rem solid color-mix(in srgb, var(--default-color), transparent 85%);
 }
 
 .portfolio-info h4 {
@@ -105,21 +104,25 @@
   color: color-mix(in srgb, var(--accent-color), transparent 35%);
 }
 
-@media (max-width: 1199px){
-  .portfolio-info, .portfolio-info h4{
+@media (max-width: 1199px) {
+
+  .portfolio-info,
+  .portfolio-info h4 {
     position: unset !important;
     opacity: 1;
   }
 
-  .portfolio-info p{
+  .portfolio-info p {
     position: relative;
     margin-top: 1rem;
   }
 
   .i-links {
     display: flex;
-    flex-wrap: nowrap; /* Garantir que os links fiquem em uma linha */
-    gap: 0.5rem; /* Ajustar o espaçamento entre os links */
+    flex-wrap: nowrap;
+    /* Garantir que os links fiquem em uma linha */
+    gap: 0.5rem;
+    /* Ajustar o espaçamento entre os links */
     justify-content: center;
   }
 

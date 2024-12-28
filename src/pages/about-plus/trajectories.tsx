@@ -329,14 +329,16 @@ export default function Trajectories() {
                   </p>
                   <p>
                     Como diz a Demi Lovato (minha maior ídola):{" "}
-                    <a 
-                      href="https://www.youtube.com/watch?v=UFeJkfB4xKo" 
-                      target="_blank" rel="noopener noreferrer">
-                        "I'm survivor in more ways than you know"
+                    <a
+                      href="https://www.youtube.com/watch?v=UFeJkfB4xKo"
+                      target="_blank"
+                      rel="noopener noreferrer">
+                      "I'm survivor in more ways than you know"
                     </a> e {" "}
                     <a
-                    href="https://www.youtube.com/watch?v=ZZhwUqzeZpY"
-                    target="_blank" rel="noopener noreferrer">
+                      href="https://www.youtube.com/watch?v=ZZhwUqzeZpY"
+                      target="_blank"
+                      rel="noopener noreferrer">
                       "I guess I'm mastering the art of starting over"
                     </a>
                     .

@@ -1,4 +1,6 @@
 @import url('/content/vendors/bootstrap/css/bootstrap.min.css');
+@import url('/content/vendors/bootstrap-icons/bootstrap-icons.css');
+@import '/content/vendors/aos/aos.css';
 
 :root {
   --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto,
@@ -105,7 +107,7 @@ h6 {
   }
 }
 
-#page-section{
+#page-section {
   padding: 1rem 0;
 }
 
@@ -145,11 +147,11 @@ h6 {
   font-weight: 600;
 }
 
-.page-title nav ol li + li {
+.page-title nav ol li+li {
   padding-left: 0.2rem;
 }
 
-.page-title nav ol li + li::before {
+.page-title nav ol li+li::before {
   content: "/";
   display: inline-block;
   padding-right: 0.2rem;
@@ -165,12 +167,14 @@ section,
   overflow: clip;
 }
 
-#shadow-host-companion{
+#shadow-host-companion {
   padding: 0 !important;
   margin: 0 !important;
   height: 0 !important;
 }
+
 @media (min-width: 1200px) {
+
   section,
   .section {
     scroll-margin-top: 4.12rem;

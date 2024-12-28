@@ -344,7 +344,10 @@ export default function Hobbies() {
                   eu não queria entrar na faculdade, minha vó é que me
                   incentivou. Mas desde que iniciei a facul em 2017 não parei
                   mais de estudar. Já estudei de tudo um pouco, na página de{" "}
-                  <a href="/resume" target="_blank" rel="noopener noreferrer">
+                  <a
+                    href="/resume"
+                    target="_blank"
+                    rel="noopener noreferrer">
                     Currículo
                   </a>{" "}
                   listei alguns cursos que fiz.{" "}

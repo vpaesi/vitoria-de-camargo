@@ -90,7 +90,7 @@ function SectionProjects() {
                       title="Ver repositório"
                       className="details-link"
                     >
-                     Ver repositório
+                      Ver repositório
                       <i className="bi bi-link-45deg"></i>
                     </a>
                   </div>
@@ -278,7 +278,7 @@ function SectionStudies() {
                       title="Ver repositório"
                       className="details-link"
                     >
-                     Ver repositório
+                      Ver repositório
                       <i className="bi bi-link-45deg"></i>
                     </a>
                   </div>

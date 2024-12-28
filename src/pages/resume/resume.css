@@ -55,7 +55,7 @@
 }
 
 @media (max-width: 1199px) {
-    .resume-img{
-      display: none;
-    }
+  .resume-img {
+    display: none;
+  }
 }
