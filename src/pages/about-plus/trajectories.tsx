@@ -47,7 +47,7 @@ export default function Trajectories() {
               <div className="container-hobby-about">
                 <div className="hobby-about">
                   <img
-                    src="/src/assets/img/character-professional.svg"
+                    src="/img/character-professional.svg"
                     alt="Ilustração de uma mulher sentada com notebook no colo se comunicado com outros 3 colegas de forma remota"
                     width={600}
                   />
@@ -161,7 +161,7 @@ export default function Trajectories() {
               <div className="container-hobby-about-inverted">
                 <div className="hobby-about-inverted">
                   <img
-                    src="/src/assets/img/character-studies.svg"
+                    src="/img/character-studies.svg"
                     alt="Ilustração de uma mulher estudando online"
                     width={600}
                   />
@@ -263,7 +263,7 @@ export default function Trajectories() {
               <div className="container-hobby-about">
                 <div className="hobby-about">
                   <img
-                    src="/src/assets/img/character-personal.svg"
+                    src="/img/character-personal.svg"
                     alt="Ilustração de uma mulher com braços cruzado e com rosto confiante. Ao fundo pisca a imagem dessa mesma mulher mostrando o muque dos braços, representando força"
                     width={600}
                   />

@@ -47,7 +47,7 @@ export default function About() {
           <div className="row gy-4 justify-content-center">
             <div className="col-lg-4">
               <img
-                src="/src/assets/img/character-about.svg"
+                src="/img/character-about.svg"
                 alt="Ilustração de mulher empurrando arquivos em um notebook do tamanho dela, ao seu redor há imagens de engrenagens, e folhas escritas CSS e JS."
                 className="img-fluid"
                 style={{ paddingTop: "2rem" }}

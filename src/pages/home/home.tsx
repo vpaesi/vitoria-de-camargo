@@ -26,7 +26,7 @@ export default function Home() {
     <main className="main">
       <section id="hero" className="hero section dark-background">
         <img
-          src="/src/assets/img/character-home.svg"
+          src="/img/character-home.svg"
           alt="Ilustração de mulher com um notebook no colo, ao seu redor há um robo, um foguete e outras referências à tecnologia e inovação"
           width="600"
           data-aos="fade-in"

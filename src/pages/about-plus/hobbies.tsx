@@ -45,7 +45,7 @@ export default function Hobbies() {
             <div className="container-hobby-about">
               <div className="hobby-about">
                 <img
-                  src="/src/assets/img/character-photography.svg"
+                  src="/img/character-photography.svg"
                   alt="Ilustração de uma mulher sentada com notebook no colo e ao fundo há quadros que seria as telas do notebook com diversas fotos"
                   width={600}
                 />
@@ -123,7 +123,7 @@ export default function Hobbies() {
             <div className="container-hobby-about-inverted">
               <div className="hobby-about-inverted">
                 <img
-                  src="/src/assets/img/character-paint.svg"
+                  src="/img/character-paint.svg"
                   alt="Ilustração de uma paleta de cor, tintas e pincéis"
                   width={600}
                 />
@@ -192,7 +192,7 @@ export default function Hobbies() {
             <div className="container-hobby-about">
               <div className="hobby-about">
                 <img
-                  src="/src/assets/img/character-series.svg"
+                  src="/img/character-series.svg"
                   alt="Ilustração de uma mulher sentada no chão e escolhendo uma fita VHS para assistir"
                   width={600}
                 />
@@ -259,7 +259,7 @@ export default function Hobbies() {
             <div className="container-hobby-about-inverted">
               <div className="hobby-about-inverted">
                 <img
-                  src="/src/assets/img/character-moto.svg"
+                  src="/img/character-moto.svg"
                   alt="Ilustração de um homem montado em uma moto custom e outros dois homem admirando ela"
                   width={600}
                 />
@@ -321,7 +321,7 @@ export default function Hobbies() {
             <div className="container-hobby-about">
               <div className="hobby-about">
                 <img
-                  src="/src/assets/img/character-studies.svg"
+                  src="/img/character-studies.svg"
                   alt="Ilustração de uma mulher estudando online"
                   width={600}
                 />

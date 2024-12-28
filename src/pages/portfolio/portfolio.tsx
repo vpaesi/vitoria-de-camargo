@@ -63,7 +63,7 @@ function SectionProjects() {
             <div className="col-lg-4 col-md-6 portfolio-item">
               <div className="portfolio-content h-100">
                 <img
-                  src="/src/assets/img/spinning-joias.png"
+                  src="/img/spinning-joias.png"
                   className="img-fluid"
                   alt="Captura de tela do site Spinning Joias apresentando um catálogo de joias"
                 />
@@ -101,7 +101,7 @@ function SectionProjects() {
             <div className="col-lg-4 col-md-6 portfolio-item">
               <div className="portfolio-content h-100">
                 <img
-                  src="/src/assets/img/primeiro-portfolio.png"
+                  src="/img/primeiro-portfolio.png"
                   className="img-fluid"
                   alt="Captura de tela do meu primeiro portfólio, apresentando uma foto minha e uma breve biografia"
                 />
@@ -190,7 +190,7 @@ function SectionStudies() {
             <div className="col-lg-4 col-md-6 portfolio-item">
               <div className="portfolio-content h-100">
                 <img
-                  src="/src/assets/img/repo-frontend.png"
+                  src="/img/repo-frontend.png"
                   className="img-fluid"
                   alt="Captura de tela do repositório no GitHub tela projetos de Front-end da Alura"
                 />
@@ -219,7 +219,7 @@ function SectionStudies() {
             <div className="col-lg-4 col-md-6 portfolio-item ">
               <div className="portfolio-content h-100">
                 <img
-                  src="/src/assets/img/repo-backend.png"
+                  src="/img/repo-backend.png"
                   className="img-fluid"
                   alt="Captura de tela do repositório no GitHub tela projetos de Back-end da Alura"
                 />
@@ -248,7 +248,7 @@ function SectionStudies() {
             <div className="col-lg-4 col-md-6 portfolio-item">
               <div className="portfolio-content h-100">
                 <img
-                  src="/src/assets/img/agencia-viagens.png"
+                  src="/img/agencia-viagens.png"
                   className="img-fluid"
                   alt="Captura de tela do site Agência de Turismo, apresentando um carrossel com imagens de locais turísticos do Brasil, abaixo inicia a sessão 'Conheça nossos Pacotes'"
                 />

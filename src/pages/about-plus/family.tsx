@@ -52,7 +52,7 @@ export default function Family() {
                 <div className="aside-family-about">
                   <div className="family-about">
                     <img
-                      src="/src/assets/img/characters-family-gave.svg"
+                      src="/img/characters-family-gave.svg"
                       alt="Ilustração de uma família feliz, com um casal, 3 filhos e uma vó"
                       width={600}
                     />
@@ -170,7 +170,7 @@ export default function Family() {
                       <div className="aside-family-about">
                         <div className="family-about">
                           <img
-                            src="/src/assets/img/characters-family-made.svg"
+                            src="/img/characters-family-made.svg"
                             alt="Ilustração de um casal jogando video-game"
                             width={600}
                           />
