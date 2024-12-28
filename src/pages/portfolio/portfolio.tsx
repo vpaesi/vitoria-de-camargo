@@ -138,7 +138,7 @@ function SectionProjects() {
             <div className="col-lg-4 col-md-6 portfolio-item">
               <div className="portfolio-content h-100">
                 <img
-                  src="src/assets/img/repo-ponte-de-geracoes.png"
+                  src="/img/repo-ponte-de-geracoes.png"
                   className="img-fluid"
                   alt="Captura de tela do repositório no GitHub do projeto Ponte de Gerações"
                 />
