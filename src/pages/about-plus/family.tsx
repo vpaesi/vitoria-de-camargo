@@ -35,7 +35,7 @@ export default function Family() {
       <section id="page-section" className="page-section">
         <div id="gave">
           <h3 data-aos="fade-up" data-aos-delay="200">
-            <em>Família que Deus me deu</em>
+            Família que Deus me deu
           </h3>
           <br />
           <div className="container">
@@ -153,7 +153,7 @@ export default function Family() {
             <div id="made">
               <section id="page-section" className="page-section">
                 <h3 data-aos="fade-up" data-aos-delay="200">
-                  <em>Família que criei</em>
+                  Família que criei
                 </h3>
                 <br />
                 <div className="container">

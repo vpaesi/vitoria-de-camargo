@@ -45,7 +45,7 @@ function SectionProjects() {
   return (
     <section id="page-section" className="page-section">
       <h3 data-aos="fade-up" data-aos-delay="200">
-        <em>Projetos</em>
+        Projetos
       </h3>
       <br />
       <div className="container">
@@ -172,7 +172,7 @@ function SectionStudies() {
   return (
     <section id="page-section" className="page-section">
       <h3 data-aos="fade-up" data-aos-delay="200">
-        <em>Estudos</em>
+        Estudos
       </h3>
       <br />
       <div className="container">

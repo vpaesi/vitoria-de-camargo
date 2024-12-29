@@ -35,7 +35,7 @@ export default function Trajectories() {
       <div id="professional">
         <section id="page-section" className="page-section">
           <h3 data-aos="fade-up" data-aos-delay="200">
-            <em>Trajetória Profissional</em>
+            Trajetória Profissional
           </h3>
           <br />
           <div className="container">
@@ -149,7 +149,7 @@ export default function Trajectories() {
       <div id="academic">
         <section id="page-section" className="page-section">
           <h3 data-aos="fade-up" data-aos-delay="200">
-            <em>Trajetória acadêmica</em>
+            Trajetória acadêmica
           </h3>
           <br />
           <div className="container">
@@ -251,7 +251,7 @@ export default function Trajectories() {
       <div id="personal">
         <section id="page-section" className="page-section">
           <h3 data-aos="fade-up" data-aos-delay="200">
-            <em>Trajetória Pessoal</em>
+            Trajetória Pessoal
           </h3>
           <br />
           <div className="container">
