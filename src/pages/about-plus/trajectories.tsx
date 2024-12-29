@@ -125,7 +125,7 @@ export default function Trajectories() {
                   </p>
                   <h4>Transição de Carreira para a TI</h4>
                   <p>
-                    Depois que saí do serivço em 2023 fiquei sem saber o que
+                    Depois que saí do serviço em 2023 fiquei sem saber o que
                     fazer. Apesar de eu ser uma baita profissional o minha
                     experiência era muito nichada, e foi aí que comecei a
                     estudar programação. No meio do caminho deixei a TI um pouco

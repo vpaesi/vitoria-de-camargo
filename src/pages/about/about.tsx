@@ -124,7 +124,7 @@ export default function About() {
               </div>
               <p className="py-3">
                 Sou gaúcha e tive o privilégio de viver uma infância incrível
-                nos final dos anos 90 e início de 2000, uma época marcada por
+                no final dos anos 90 e início de 2000, uma época marcada por
                 tantas descobertas e mudanças. Acompanhei o avanço da tecnologia
                 no Brasil e me fascino com como ela se tornou parte essencial do
                 nosso cotidiano. Hoje, tenho orgulho de fazer parte dessa

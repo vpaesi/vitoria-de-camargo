@@ -107,7 +107,7 @@ export default function Family() {
                     período foi confuso pra mim, eu estava lidando com a
                     adolescencia, colégio novo, e agora ia ter um bebê em
                     criança sem mais nem menos. A gravidez da mãe era de risco e
-                    eu descobri o quando amava a Sophia no dia que ela nasceu.
+                    eu descobri o quanto amava a Sophia no dia que ela nasceu.
                     Dia 22/07/2012 foi o pior dia da minha vida e também um dos
                     melhores. Minha irmã nascia e minha mãe ia pra UTI pois o
                     parto deu errado e ela teve uma hemorragia horrível,
@@ -243,7 +243,7 @@ export default function Family() {
                         <p>
                           Eu teria que escrever um livro pra descrever tudo o
                           que o João tem de bom, começando pelo coração e indo
-                          até a comida maravilhosa dele. Desde sempre me sinto
+                          até os seus dotes culinários. Desde sempre me sinto
                           confortável para ser eu mesma, coisa que não sentia
                           nem na casa dos meus pais. Desde sempre ele desperta a
                           melhor versão de mim e vice-versa. Desde sempre eu rio
