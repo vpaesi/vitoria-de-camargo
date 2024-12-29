@@ -178,11 +178,3 @@ Acesse:
 <h2>&#x301C; Contribuindo</h2>
 
 Contribuições são bem-vindas! Envie uma **pull request** ou abra uma **issue** para sugerir melhorias.
-
----
-
-## :handshake: Contato
-
-**Vitória de Camargo** - [LinkedIn](https://www.linkedin.com/in/vpaesi/)
-
-**Link do Projeto**: [Ponte de Gerações](https://github.com/vpaesi/vitoria-de-camargo)
