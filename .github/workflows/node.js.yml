@@ -31,9 +31,3 @@ jobs:
 
       - name: Run tests
         run: npm run test
-
-      - name: Authenticate with Vercel
-        run: vercel login ${{ secrets.VERCEL_TOKEN }}
-
-      - name: Deploy
-        run: npm run deploy
