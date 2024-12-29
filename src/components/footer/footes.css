@@ -30,6 +30,16 @@
   text-decoration: none;
 }
 
+.credits-release{
+  font-size: 0.8rem;
+  padding-top: 0.31rem;
+  color: var(--surface-color);
+}
+
+.credits-release a{
+  color: #505050;
+}
+
 .copyright,
 .credits {
   display: none;

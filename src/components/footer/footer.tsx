@@ -26,6 +26,18 @@ const Footer = () => {
           </a>
         </div>
       </div>
+
+      <div className="credits-release">
+        <hr/>
+        <a href="https://storyset.com/" target="_blank" rel="noopener noreferrer">
+          Todas as ilustrações do site foram importadas do Storyset
+        </a>
+        <br />
+        <a href="https://github.com/vpaesi/vitoria-de-camargo" target="_blank" rel="noopener noreferrer">
+        Website vitoria-de-camargo.vercel.app released 28/12/2024 - version 1.0.2
+        </a>
+      </div>
+
         <div className="copyright">
           <span>Copyright</span>
           <strong className="px-1 sitename">Personal</strong>
