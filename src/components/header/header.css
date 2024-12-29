@@ -174,7 +174,7 @@
   }
 
   #navmenu {
-    align-content: center;
+    align-content: space-around;
     background-color: rgba(15, 15, 15, 0.975);
   }
 
@@ -284,5 +284,34 @@
   .mobile-nav-active ul {
     position: absolute;
     display: contents !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .sitename {
+    padding: 0.7rem 0 0.7rem 1.7rem;
+  }
+
+  .mobile-nav-toggle {
+    font-size: 1.5rem;
+  }
+
+  .navmenu a,
+  .navmenu a:focus {
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  .navmenu a i,
+  .navmenu a:focus i {
+    font-size: 0.75rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 1rem !important;
+  }
+
+  .navmenu .dropdown ul {
+    padding: 0.5rem 0;
+    margin: 0.5rem 1.25rem;
   }
 }

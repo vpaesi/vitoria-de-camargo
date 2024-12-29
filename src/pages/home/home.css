@@ -88,4 +88,9 @@
   .hero p {
     font-size: 1.25rem;
   }
+
+  .hero img {
+    opacity: 0.2 !important;
+    margin: 0;
+  }
 }

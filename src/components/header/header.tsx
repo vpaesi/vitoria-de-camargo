@@ -246,7 +246,7 @@ export default function Header(): JSX.Element {
     <header id="header" className="header d-flex align-items-center fixed-top">
       <div className="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
         <h1 className="sitename">
-          Porfólio de {personalInfo.firstName} {personalInfo.lastName}
+          {personalInfo.firstName} {personalInfo.lastName}
         </h1>
 
         <nav>{navMenu}</nav>
