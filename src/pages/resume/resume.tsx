@@ -12,20 +12,17 @@ export default function Resume() {
               <div className="col-lg-8">
                 <h1>Resumo</h1>
                 <p className="mb-0">
-                  Desde a adolescência o front-end me chama a atenção e hoje
-                  tenho essa área da programação como foco de estudo. Gosto da
-                  ideia de fazer parte de uma equipe que pensa no público alvo,
-                  tornando sites uma interface dinâmica, intuitiva e acessível.
-                  Sou uma profissional dedicada e priorizo a experiência do
-                  usuário em minhas aplicações. Tenho ótimo senso de prioridade,
-                  foco na otimização do tempo, organização e proatividade, além
-                  de estar em constante desenvolvimento de minhas hard e soft
-                  skills. As ferramentas que mais tenho afinidade são{" "}
+                  Sou uma profissional motivada, detalhista e apaixonada por
+                  entregar soluções com qualidade. Tenho experiência em testes
+                  funcionais manuais e automatizados{" "}
                   <b>
-                    HTML, CSS, Javascript, TypeScript, React Vite, Java e
-                    Springboot
+                    {" "}
+                    (Selenium Webdriver, Postman, JUnit, Jest e Cypress), em TDD
+                    e BDD com Gherkin
                   </b>
-                  .
+                  , além de formação em <b>Gestão da Qualidade</b>. Busco sempre
+                  colaborar com equipes ágeis, propondo melhorias e assegurando
+                  que os sistemas atendam aos mais altos padrões.
                 </p>
               </div>
             </div>
@@ -54,17 +51,19 @@ export default function Resume() {
                 <h4>{personalInfo.fullName}</h4>
                 <p>
                   <em>
-                    <b>Desenvolvedora de software</b> fullstack com maior
-                    familiaridade com front-end, estudante de{" "}
-                    <b>Análise e Desenvolvimento de Sistemas</b> e Freelancer
-                    como <b>Criadora de conteúdo visual</b>.
+                    <b>Desenvolvedora fullstack</b> e <b>QA</b> e estudante de{" "}
+                    <b>Análise e Desenvolvimento de Sistemas</b>.
                   </em>
                 </p>
                 <ul>
                   <li>{personalInfo.city}</li>
                   <li>{personalInfo.phone}</li>
                   <li>
-                    <a href={personalInfo.socialMedia.email} target="_blank" rel="noopener noreferrer">
+                    <a
+                      href={personalInfo.socialMedia.email}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       {personalInfo.email}
                     </a>
                   </li>

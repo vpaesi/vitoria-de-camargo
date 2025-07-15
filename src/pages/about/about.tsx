@@ -11,6 +11,17 @@ export default function About() {
     });
   }, []);
 
+  const calculateAge = (() => {
+    const birthDate = new Date(1997, 9, 20);
+    const today = new Date();
+    let age = today.getFullYear() - birthDate.getFullYear();
+    const m = today.getMonth() - birthDate.getMonth();
+    if (m < 0 || (m === 9 && today.getDate() < 20)) {
+      age--;
+    }
+    return age;
+  })();
+
   return (
     <section className="about-page">
       <div className="page-title" data-aos="fade">
@@ -18,15 +29,7 @@ export default function About() {
           <div className="container">
             <div className="row d-flex justify-content-center text-center">
               <div className="col-lg-8">
-                <h1>Sobre mim</h1>
-                <p className="mb-0">
-                  Sou uma desenvolvedora de software apaixonada por tecnologia,
-                  inovação e design centrado no usuário. Sempre buscando
-                  aprender e crescer, tenho especial interesse em front-end. Meu
-                  objetivo é criar soluções tecnológicas que não apenas resolvam
-                  problemas, mas também encantem e impactem positivamente a vida
-                  das pessoas.
-                </p>
+                <h1>Sobre mim</h1>               
               </div>
             </div>
           </div>
@@ -54,13 +57,7 @@ export default function About() {
               />
             </div>
             <div className="col-lg-8 content">
-              <h2>
-                Desenvolvedora de software &amp; Criadora de conteúdo visual.
-              </h2>
-              <p className="fst-italic py-3">
-                Acredito que "A tecnologia move o mundo" e é por isso que estou
-                sempre em busca de novos conhecimentos e desafios.
-              </p>
+              <h2>Analista de Testes &amp; Desenvolvedora de software.</h2>
               <div className="row">
                 <div className="col-lg-6">
                   <ul>
@@ -96,11 +93,11 @@ export default function About() {
                   <ul>
                     <li>
                       <i className="bi bi-chevron-right"></i>{" "}
-                      <strong>Idade:</strong> <span>27</span>
+                      <strong>Idade:</strong> <span>{calculateAge} anos</span>
                     </li>
                     <li>
                       <i className="bi bi-chevron-right"></i>{" "}
-                      <strong>Senioridade:</strong> <span>Trainee</span>
+                      <strong>Senioridade:</strong> <span>Jr.</span>
                     </li>
                     <li>
                       <i className="bi bi-chevron-right"></i>{" "}
@@ -111,7 +108,7 @@ export default function About() {
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          paesivitoria@gmail.com
+                          {`${personalInfo.email}`}
                         </a>
                       </span>
                     </li>
@@ -123,10 +120,10 @@ export default function About() {
                 </div>
               </div>
               <p className="py-3">
-                Sou gaúcha e tive o privilégio de viver uma infância incrível
-                no final dos anos 90 e início de 2000, uma época marcada por
-                tantas descobertas e mudanças. Acompanhei o avanço da tecnologia
-                no Brasil e me fascino com como ela se tornou parte essencial do
+                Sou gaúcha e tive o privilégio de viver uma infância incrível no
+                final dos anos 90 e início de 2000, uma época marcada por tantas
+                descobertas e mudanças. Acompanhei o avanço da tecnologia no
+                Brasil e me fascino com como ela se tornou parte essencial do
                 nosso cotidiano. Hoje, tenho orgulho de fazer parte dessa
                 evolução, contribuindo com meu trabalho para os muitos futuros
                 promissores que a tecnologia ainda nos reserva.
@@ -136,7 +133,11 @@ export default function About() {
         </div>
       </section>
 
-      <section id="skills" className="skills section" style={{ paddingTop: "0.2rem" }}>
+      <section
+        id="skills"
+        className="skills section"
+        style={{ paddingTop: "0.2rem" }}
+      >
         <div className="container section-title" data-aos="fade-up">
           <h2>Skills</h2>
           <div>
@@ -150,13 +151,13 @@ export default function About() {
             <div className="col-lg-6">
               <div className="progress">
                 <span className="skill">
-                  <span>HTML/CSS</span> <i className="val">95%</i>
+                  <span>HTML/CSS</span> <i className="val">98%</i>
                 </span>
                 <div className="progress-bar-wrap">
                   <div
                     className="progress-bar"
                     role="progressbar"
-                    aria-valuenow={95}
+                    aria-valuenow={98}
                     aria-valuemin={0}
                     aria-valuemax={100}
                   ></div>
@@ -165,13 +166,13 @@ export default function About() {
 
               <div className="progress">
                 <span className="skill">
-                  <span>JavaScript/TypeScript</span> <i className="val">75%</i>
+                  <span>JavaScript/TypeScript</span> <i className="val">90%</i>
                 </span>
                 <div className="progress-bar-wrap">
                   <div
                     className="progress-bar"
                     role="progressbar"
-                    aria-valuenow={75}
+                    aria-valuenow={90}
                     aria-valuemin={0}
                     aria-valuemax={100}
                   ></div>
@@ -180,13 +181,13 @@ export default function About() {
 
               <div className="progress">
                 <span className="skill">
-                  <span>Java</span> <i className="val">50%</i>
+                  <span>Java/Springboot</span> <i className="val">70%</i>
                 </span>
                 <div className="progress-bar-wrap">
                   <div
                     className="progress-bar"
                     role="progressbar"
-                    aria-valuenow={50}
+                    aria-valuenow={70}
                     aria-valuemin={0}
                     aria-valuemax={100}
                   ></div>
@@ -197,13 +198,28 @@ export default function About() {
             <div className="col-lg-6">
               <div className="progress">
                 <span className="skill">
-                  <span>Criação de conteúdo visual/Canva</span> <i className="val">98%</i>
+                  <span>Testes automatizados</span> <i className="val">70%</i>
                 </span>
                 <div className="progress-bar-wrap">
                   <div
                     className="progress-bar"
                     role="progressbar"
-                    aria-valuenow={98}
+                    aria-valuenow={70}
+                    aria-valuemin={0}
+                    aria-valuemax={100}
+                  ></div>
+                </div>
+              </div>
+
+              <div className="progress">
+                <span className="skill">
+                  <span>Testes de API</span> <i className="val">70%</i>
+                </span>
+                <div className="progress-bar-wrap">
+                  <div
+                    className="progress-bar"
+                    role="progressbar"
+                    aria-valuenow={90}
                     aria-valuemin={0}
                     aria-valuemax={100}
                   ></div>
@@ -225,22 +241,7 @@ export default function About() {
                 </div>
               </div>
 
-              <div className="progress">
-                <span className="skill">
-                  <span>Springboot</span> <i className="val">60%</i>
-                </span>
-                <div className="progress-bar-wrap">
-                  <div
-                    className="progress-bar"
-                    role="progressbar"
-                    aria-valuenow={60}
-                    aria-valuemin={0}
-                    aria-valuemax={100}
-                  ></div>
-                </div>
-              </div>
             </div>
-
           </div>
         </div>
       </section>
@@ -264,14 +265,9 @@ export default function About() {
               <div className="features-item">
                 <i className="bi bi-palette" style={{ color: "#ffbb2c" }}></i>
                 <h3>
-                  <a
-                    href="https://www.instagram.com/pinturaZen"
-                    className="stretched-link"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                  <p className="stretched-link" style={{ margin: 10 }}>
                     Pintura
-                  </a>
+                  </p>
                 </h3>
               </div>
             </div>
@@ -282,13 +278,14 @@ export default function About() {
               data-aos-delay="200"
             >
               <div className="features-item">
-                <i className="bi bi-camera" style={{ color: "#5578ff" }}></i>
+                <i className="bi bi-camera" style={{ color: "#5578ff" }} ></i>
                 <h3>
                   <a
                     href={personalInfo.socialMedia.instagram}
                     className="stretched-link"
                     target="_blank"
                     rel="noopener noreferrer"
+                    style={{ margin: 10 }}
                   >
                     Fotografia
                   </a>
@@ -309,6 +306,7 @@ export default function About() {
                     className="stretched-link"
                     target="_blank"
                     rel="noopener noreferrer"
+                    style={{ margin: 10 }}
                   >
                     Séries e Filmes
                   </a>
@@ -324,7 +322,7 @@ export default function About() {
               <div className="features-item">
                 <i className="bi bi-backpack2" style={{ color: "#47aeff" }}></i>
                 <h3>
-                  <p className="stretched-link" style={{ margin: 0 }}>
+                  <p className="stretched-link" style={{ margin: 10 }}>
                     Viagens
                   </p>
                 </h3>
@@ -337,16 +335,14 @@ export default function About() {
               data-aos-delay="600"
             >
               <div className="features-item">
-                <i className="bi bi-mortarboard" style={{ color: "#ffa76e" }}></i>
+                <i
+                  className="bi bi-mortarboard"
+                  style={{ color: "#ffa76e" }}
+                ></i>
                 <h3>
-                  <a
-                    href="https://cursos.alura.com.br/user/viehdevitoria"
-                    className="stretched-link"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                  <p className="stretched-link" style={{ margin: 10 }}>
                     Estudos
-                  </a>
+                  </p>
                 </h3>
               </div>
             </div>
@@ -360,10 +356,11 @@ export default function About() {
                 <i className="bi bi-book" style={{ color: "#11dbcf" }}></i>
                 <h3>
                   <a
-                    href="https://www.skoob.com.br/perfil/viehdevitoria"
+                    href={`${personalInfo.socialMedia.skoob}`}
                     className="stretched-link"
                     target="_blank"
                     rel="noopener noreferrer"
+                    style={{ margin: 10 }}
                   >
                     Livros
                   </a>
@@ -377,12 +374,9 @@ export default function About() {
               data-aos-delay="800"
             >
               <div className="features-item">
-                <i
-                  className="bi bi-gear-wide"
-                  style={{ color: "#4233ff" }}
-                ></i>
+                <i className="bi bi-gear-wide" style={{ color: "#4233ff" }}></i>
                 <h3>
-                  <p className="stretched-link" style={{ margin: 0 }}>
+                  <p className="stretched-link" style={{ margin: 10 }}>
                     Motociclismo
                   </p>
                 </h3>
@@ -397,17 +391,15 @@ export default function About() {
               <div className="features-item">
                 <i className="bi bi-dice-5" style={{ color: "#b2904f" }}></i>
                 <h3>
-                  <p className="stretched-link" style={{ margin: 0 }}>
+                  <p className="stretched-link" style={{ margin: 10 }}>
                     Board Games
                   </p>
                 </h3>
               </div>
             </div>
-
           </div>
         </div>
       </section>
-
     </section>
   );
 }

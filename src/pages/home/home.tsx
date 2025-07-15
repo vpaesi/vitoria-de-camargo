@@ -7,9 +7,9 @@ export default function Home() {
   useEffect(() => {
     const typed = new Typed(".typed", {
       strings: [
+        " QA (Quality Assurance)",
         " Desenvolvedora de software",
-        " Criadora de Conteúdo Visual",
-        " Estudante de ADS",
+        " Analista de Testes",
       ],
       typeSpeed: 60,
       backSpeed: 40,
