@@ -7,9 +7,6 @@ export default function Header(): JSX.Element {
   const location = useLocation();
   const [activeLink, setActiveLink] = useState(location.pathname);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isFamilyOpen, setIsFamilyOpen] = useState(false);
-  const [isTrajectoriesOpen, setIsTrajectoriesOpen] = useState(false);
-  const [isAboutPlusOpen, setIsAboutPlusOpen] = useState(false);
 
   const handleLinkClick = (path: string) => {
     setActiveLink(path);
@@ -18,42 +15,6 @@ export default function Header(): JSX.Element {
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
-  };
-
-  const toggleAboutPlusMenu = () => {
-    setIsAboutPlusOpen(!isAboutPlusOpen);
-  };
-
-  const toggleFamilyMenu = () => {
-    setIsFamilyOpen(!isFamilyOpen);
-  };
-
-  const toggleTrajectoriesMenu = () => {
-    setIsTrajectoriesOpen(!isTrajectoriesOpen);
-  };
-
-  const handleMouseEnterFamily = () => {
-    setIsFamilyOpen(true);
-  };
-
-  const handleMouseLeaveFamily = () => {
-    setIsFamilyOpen(false);
-  };
-
-  const handleMouseEnterTrajectories = () => {
-    setIsTrajectoriesOpen(true);
-  };
-
-  const handleMouseLeaveTrajectories = () => {
-    setIsTrajectoriesOpen(false);
-  };
-
-  const handleMouseEnterAboutPlus = () => {
-    setIsAboutPlusOpen(true);
-  };
-
-  const handleMouseLeaveAboutPlus = () => {
-    setIsAboutPlusOpen(false);
   };
 
   const navMenu = (
