@@ -1,0 +1,9 @@
+<svg width="420" height="78" viewBox="0 18 420 78" xmlns="http://www.w3.org/2000/svg">
+  <!-- Monograma (compact vertical spacing) -->
+  <circle cx="60" cy="54" r="36" fill="#1F2937" />
+  <text x="60" y="54" text-anchor="middle" dominant-baseline="middle" alignment-baseline="middle" font-family="Montserrat, Arial, sans-serif" font-size="36" font-weight="600" fill="#FFFFFF">V</text>
+
+  <!-- Nome -->
+  <text x="120" y="49" font-family="Montserrat, Arial, sans-serif" font-size="26" font-weight="600" fill="#111827">Vitória</text>
+  <text x="120" y="76" font-family="Montserrat, Arial, sans-serif" font-size="18" font-weight="400" letter-spacing="1" fill="#6B7280">DE CAMARGO</text>
+</svg>
