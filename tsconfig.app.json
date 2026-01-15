@@ -22,5 +22,5 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": ["src", "comentarios-pessoais/inserir-depois/em-pages/portfolio", "comentarios-pessoais/inserir-depois/src/hobbies.tsx", "src/components/userContextProps.tsx"]
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.d.ts"],
 }
