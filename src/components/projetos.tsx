@@ -1,148 +1,135 @@
-import React, { useState } from "react";
+import spinning from "../../assets/captura-de-tela/spinning.png";
+import falaCidadao from "../../assets/captura-de-tela/fala-cidadao.png";
+import compartilhaMais from "../../assets/captura-de-tela/compartilha-plus.png";
+import acervi from "../../assets/captura-de-tela/acervi.png";
 
 type Project = {
-    id: string;
-    title: string;
-    description: string;
-    tech?: string[];
-    link?: string;
-    repo?: string;
-    image?: string;
+  id: string;
+  title: string;
+  description: string;
+  tech?: string[];
+  link?: string;
+  repo?: string;
+  image?: string;
 };
 
 const sampleProjects: Project[] = [
-    {
-        id: "p1",
-        title: "Projeto A",
-        description: "Descrição curta e genérica do Projeto A.",
-        tech: ["React", "TypeScript", "CSS"],
-        link: "#",
-        repo: "#",
-    },
-    {
-        id: "p2",
-        title: "Projeto B",
-        description: "Descrição curta e genérica do Projeto B.",
-        tech: ["Node", "Express", "Postgres"],
-        link: "#",
-        repo: "#",
-    },
-    {
-        id: "p3",
-        title: "Projeto C",
-        description: "Descrição curta e genérica do Projeto C.",
-        tech: ["Next.js", "Vercel"],
-        link: "#",
-        repo: "#",
-    },
+  {
+    id: "p1",
+    title: "Spinning Joias",
+    description:
+      "Interface web responsiva para catálogo de produtos da Spinning Joias.",
+    tech: ["React", "TypeScript", "Jest"],
+    link: "https://spinning-joias.vercel.app/",
+    repo: "https://github.com/vpaesi/spinning-joias",
+    image: spinning,
+  },
+  {
+    id: "p2",
+    title: "Fala Cidadão",
+    description:
+      "Aplicação de denúncias para reportar problemas urbanos de forma simples.",
+    tech: ["React", "TypeScript", "Jest"],
+    link: "https://fala-cidadao.vercel.app/",
+    repo: "https://github.com/vpaesi/fala-cidadao",
+    image: falaCidadao,
+  },
+  {
+    id: "p3",
+    title: "Compartilha+",
+    description:
+      "Plataforma para doação e troca comunitária de itens essenciais.",
+    tech: ["React", "TypeScript", "Tailwind CSS"],
+    link: "https://compartilha-mais.vercel.app/",
+    repo: "https://github.com/vpaesi/compartilha-mais",
+    image: compartilhaMais,
+  },
+  {
+    id: "p4",
+    title: "Acervi",
+    description: "App mobile para catalogação e organização de acervo pessoal.",
+    tech: ["AppSheet"],
+    link: "https://www.linkedin.com/feed/update/urn:li:activity:7417311388450250753/",
+    image: acervi,
+  },
 ];
 
-const cardStyle: React.CSSProperties = {
-    border: "1px solid #e5e7eb",
-    borderRadius: 8,
-    padding: 16,
-    background: "#fff",
-    boxShadow: "0 1px 3px rgba(0,0,0,0.06)",
-    minWidth: 240,
-    maxWidth: 340,
-    display: "flex",
-    flexDirection: "column",
-    gap: 8,
-};
-
-const gridStyle: React.CSSProperties = {
-    display: "grid",
-    gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))",
-    gap: 16,
-    alignItems: "start",
-};
-
 function ProjectCard({ project }: { project: Project }) {
-    return (
-        
-        <article style={cardStyle} aria-labelledby={`proj-${project.id}`}>
-            <header>
-                <h3 id={`proj-${project.id}`} style={{ margin: 0, fontSize: 18 }}>
-                    {project.title}
-                </h3>
-            </header>
-            <p style={{ margin: 0, color: "#374151", fontSize: 14 }}>
-                {project.description}
-            </p>
-            {project.tech && (
-                <ul style={{ display: "flex", gap: 8, flexWrap: "wrap", padding: 0, margin: 0, listStyle: "none" }}>
-                    {project.tech.map((t) => (
-                        <li key={t} style={{ fontSize: 12, color: "#6b7280", background: "#f3f4f6", padding: "4px 8px", borderRadius: 999 }}>
-                            {t}
-                        </li>
-                    ))}
-                </ul>
-            )}
-            <div style={{ marginTop: "auto", display: "flex", gap: 8 }}>
-                {project.link && (
-                    <a href={project.link} style={{ fontSize: 13, color: "#111827", textDecoration: "none" }}>
-                        Ver projeto
-                    </a>
-                )}
-                {project.repo && (
-                    <a href={project.repo} style={{ fontSize: 13, color: "#6b7280" }}>
-                        Repositório
-                    </a>
-                )}
-            </div>
-        </article>
-    );
+  return (
+    <article className="project-card" aria-labelledby={`proj-${project.id}`}>
+      {project.image && (
+        <img
+          src={project.image}
+          alt={project.title}
+          className="project-image"
+        />
+      )}
+      <header>
+        <h3 id={`proj-${project.id}`} className="project-title">
+          {project.title}
+        </h3>
+      </header>
+      <p className="project-description">{project.description}</p>
+      {project.tech && (
+        <ul className="project-tech-list">
+          {project.tech.map((t) => (
+            <li key={t} className="project-tech">
+              {t}
+            </li>
+          ))}
+        </ul>
+      )}
+      <div className="project-links">
+        {project.link && (
+          <a
+            href={project.link}
+            className="contato-social"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Ver projeto
+          </a>
+        )}
+        {project.repo && (
+          <a
+            href={project.repo}
+            className="contato-social"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Repositório
+          </a>
+        )}
+      </div>
+    </article>
+  );
 }
 
-export default function ProjetosSection({ projects = sampleProjects }: { projects?: Project[] }) {
-    const [open, setOpen] = useState(false);
-    const [active, setActive] = useState<Project | null>(null);
+export default function ProjetosSection({
+  projects = sampleProjects,
+}: {
+  projects?: Project[];
+}) {
+  return (
+    <section aria-labelledby="projetos-title" className="card projetos" id="projetos">
+      <h2 id="projetos-title">Projetos</h2>
+      <p>
+        Aqui estão alguns projetos reais que desenvolvi, com foco na qualidade e
+        na entrega de valor aos usuários.
+      </p>
+      <div className="project-grid">
+        {projects.map((p) => (
+          <div key={p.id} className="project-tile">
+            <ProjectCard project={p} />
+          </div>
+        ))}
+      </div>
 
-    function openModal(p: Project) {
-        setActive(p);
-        setOpen(true);
-    }
-
-    function closeModal() {
-        setOpen(false);
-        setActive(null);
-    }
-
-    return (
-        <section aria-labelledby="projetos-title" style={{ padding: 24 }} className="card projetos" id="projetos">
-            <h2 id="projetos-title" style={{ margin: "0 0 16px 0" }}>
-                Projetos
-            </h2>
-            <p style={{ marginTop: 0, marginBottom: 16, color: "#6b7280" }}>
-                Seção genérica com exemplos de projetos — substitua pelos seus.
-            </p>
-            <div style={gridStyle}>
-                {projects.map((p) => (
-                    <div key={p.id} onClick={() => openModal(p)} style={{ cursor: 'pointer' }}>
-                        <ProjectCard project={p} />
-                    </div>
-                ))}
-            </div>
-
-            {open && active && (
-                <div className="modal" role="dialog" aria-modal="true">
-                    <div className="modal-backdrop" onClick={closeModal}></div>
-                    <div className="modal-content">
-                        <button className="modal-close" onClick={closeModal}>&times;</button>
-                        <div style={{ display: 'flex', gap: 12 }}>
-                            <img src={active.image || ''} alt={active.title} style={{ width: 240, height: 'auto' }} />
-                            <div>
-                                <h3>{active.title}</h3>
-                                <p>{active.description}</p>
-                                <div style={{ marginTop: 12 }}>
-                                    {active.link && <a href={active.link} target="_blank" rel="noreferrer" className="btn">Site</a>}
-                                    {active.repo && <a href={active.repo} target="_blank" rel="noreferrer" className="btn" style={{ marginLeft: 8 }}>Repo</a>}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            )}
-        </section>
-    );
+      <div className="project-more">
+        <a href="https://github.com/vpaesi" target="_blank" rel="noreferrer" className="badges-toggle btn">
+          <span className="btn-text">Ver mais projetos</span>
+        </a>
+      </div>
+    </section>
+  );
 }

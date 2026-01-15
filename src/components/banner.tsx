@@ -9,8 +9,8 @@ export default function Banner() {
           <h2 className="banner-title">Olá — eu sou <span className="highlight">Vitória</span></h2>
           <p className="banner-description">Analista de QA — testes manuais e automação com foco em qualidade e experiência de usuário.</p>
           <div className="banner-buttons">
-            <a className="btn btn-resume" href="#contato">Contato</a>
-            <a className="btn btn-connect" href="#projetos">Projetos</a>
+            <a className="btn btn-resume" href="#contato" target="_blank" rel="noreferrer">Contato</a>
+            <a className="btn btn-connect" href="#projetos" target="_blank" rel="noreferrer">Projetos</a>
           </div>
         </div>
       </div>

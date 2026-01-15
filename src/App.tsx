@@ -5,7 +5,7 @@ import Banner from './components/banner';
 import Sobre from './components/sobre';
 import Projetos from './components/projetos';
 import Contato from './components/contato';
-import FloatingHire from './components/floatingHire';
+import ContrateBtnFlutuante from './components/contrateBtnFlutuante';
 
 const App: React.FC = () => {
     return (
@@ -19,13 +19,9 @@ const App: React.FC = () => {
                 <Contato />
             </main>
 
-            <FloatingHire />
+            <ContrateBtnFlutuante />
         </div>
     );
 };
 
 export default App;
-
-
-
-

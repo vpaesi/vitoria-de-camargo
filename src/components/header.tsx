@@ -7,8 +7,14 @@ export default function Header() {
         <Nav />
       </div>
 
-      <img src="assets/logo.svg" alt="Logo" className="nav-logo nav-title" aria-hidden="true" />
-
+      <a href="#">
+        <img
+          src="assets/logo.svg"
+          alt="Logo"
+          className="nav-logo nav-title"
+          aria-hidden="true"
+        />
+      </a>
       <div className="header-right" aria-hidden="true" />
     </header>
   );

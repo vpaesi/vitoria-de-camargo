@@ -1,4 +1,4 @@
-export default function FloatingHire() {
+export default function ContrateBtnFlutuante() {
   return (
     <div className="floating-hire">
       <a
@@ -21,7 +21,7 @@ export default function FloatingHire() {
 
           <circle cx="50" cy="50" r="36" className="hire-circle" />
 
-          <text x="50" y="54" className="hire-center">
+          <text x="50" y="50" textAnchor="middle" dominantBaseline="middle" className="hire-center">
             CONTRATE
           </text>
         </svg>
