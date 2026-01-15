@@ -1,4 +1,5 @@
 import Nav from "./nav";
+import logo from "../../assets/logo.svg";
 
 export default function Header() {
   return (
@@ -8,11 +9,7 @@ export default function Header() {
       </div>
 
       <a href="#">
-        <img
-          src="/assets/logo.svg"
-          alt="Logo"
-          className="nav-logo nav-title"
-        />
+        <img src={logo} alt="Logo" className="nav-logo nav-title" />
       </a>
       <div className="header-right" />
     </header>
