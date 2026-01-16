@@ -466,7 +466,7 @@ main.main,
   font-weight: 600;
 }
 
-@media (max-width: 720px) {
+@media (min-width: 900px) {
   .contato-row {
     flex-direction: column;
   }

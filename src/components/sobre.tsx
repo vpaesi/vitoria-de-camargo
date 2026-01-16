@@ -7,6 +7,7 @@ import cucumber from '../../assets/cucumber.png';
 import appium from '../../assets/appium.png';
 import insomnia from '../../assets/insomnia.jpg';
 import junit from '../../assets/junit.png';
+import playwright from '../../assets/playwright.png';
 
 export default function Sobre() {
   const [showAllTech, setShowAllTech] = useState(false);
@@ -49,6 +50,9 @@ export default function Sobre() {
       <h2>Ferramentas e tecnologias de testes</h2>
         <div className="tools-badges">
           <div className="badge">
+            <img alt="Playwright" src={playwright} />
+          </div>
+          <div className="badge">
             <img alt="Selenium" src={selenium} />
           </div>
           <div className="badge">
@@ -69,9 +73,9 @@ export default function Sobre() {
           <div className="badge">
             <img alt="Postman" src={postman} />
           </div>
-          <div className="badge">
+          {/* <div className="badge">
             <img alt="Insomnia" src={insomnia} />
-          </div>
+          </div> */}
         </div>
         {showAllTech && <h3>Demais ferramentas e tecnologias</h3>}
         <div

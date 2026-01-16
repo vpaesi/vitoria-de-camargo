@@ -13,7 +13,7 @@ export default function Contato(): JSX.Element {
             <h3>E-mail</h3>
             <h4>dev.vitoriacamargo@gmail.com</h4>
           </address>
-          <div className="contato-col">
+          <div className="contato-col"> 
             <p className="contato-meta">
               Estou aberta para freelancing, projetos, dúvidas ou colaborações.
             </p>
