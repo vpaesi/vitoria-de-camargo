@@ -5,7 +5,7 @@ import postman from '../../assets/postman.svg';
 import jest from '../../assets/jest.jpg';
 import cucumber from '../../assets/cucumber.png';
 import appium from '../../assets/appium.png';
-import insomnia from '../../assets/insomnia.jpg';
+// import insomnia from '../../assets/insomnia.jpg';
 import junit from '../../assets/junit.png';
 import playwright from '../../assets/playwright.png';
 
